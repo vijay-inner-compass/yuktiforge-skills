@@ -14,9 +14,9 @@
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "17e3ab5723625bbbf3d6ac452e1a2eab3b1d2e43b30802771dfc82a8c2752a94",
+  "package_content_sha256": "71e1bb1504a4aefd380bfb15c3d2f921cd487ac39e1de0a885f6c71ccf621977",
   "skill_id": "api-integration-documenter",
-  "skill_version": "0.1.1",
+  "skill_version": "0.1.2",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"

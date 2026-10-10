@@ -1,6 +1,6 @@
 schema_version: '1.0'
 skill_id: documentation-publisher
-version: 0.1.1
+version: 0.1.2
 description: 'Publishes the documentation as a pack: Markdown sources, an HTML site, a DOCX and an A4
   PDF with table of contents and diagrams, then checks links, DOCX structure and rendered PDF pages. Use
   when the user wants documents to share or archive. A format whose tool is missing (pandoc, Chromium,

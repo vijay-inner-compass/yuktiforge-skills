@@ -1,4 +1,4 @@
-# Installing requirements-reconstructor 0.1.1
+# Installing requirements-reconstructor 0.1.2
 
 This folder is a complete skill. You do **not** need YuktiForge or its Creator to use it.
 
@@ -14,11 +14,11 @@ Unzip the package for your agent into the **root of your project**. The archive 
 | antigravity | `.agents/skills/requirements-reconstructor/` |
 
 ```bash
-unzip requirements-reconstructor-0.1.1-<agent>.zip -d /path/to/your/project
+unzip requirements-reconstructor-0.1.2-<agent>.zip -d /path/to/your/project
 ```
 
 Or use YuktiForge for a preview, overwrite protection, uninstall and rollback:
-`yuktiforge install requirements-reconstructor-0.1.1-<agent>.zip --agent <agent> --project /path/to/your/project`.
+`yuktiforge install requirements-reconstructor-0.1.2-<agent>.zip --agent <agent> --project /path/to/your/project`.
 
 Whether this skill has been **tested** in your agent is stated in the release's `compatibility-matrix.md`; an agent that is not marked
 VERIFIED there was not tested, and the folder layout alone is not a guarantee.

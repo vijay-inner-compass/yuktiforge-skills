@@ -1,14 +1,14 @@
 {
   "builder": "docint-standalone",
   "built_by": "yuktiforge 0.5.0",
-  "content_sha256": "f368ca8d4eb52d9af5a158108c6806b59863f11f24b0eae4a7c85e8abaf3c6c6",
+  "content_sha256": "126bd2cddc5c6e9739eba49b97824351f703cf9b3e0110d2cf3efbcdbad01efb",
   "file_count": 124,
   "format": "yuktiforge-provenance/1",
   "reproducible_build": "same source revision + same tool version + same SOURCE_DATE_EPOCH give byte-identical zips",
   "skill_id": "documentation-quality-auditor",
-  "skill_version": "0.1.1",
+  "skill_version": "0.1.2",
   "source": "src/yuktiforge/skills/documentation_quality_auditor",
-  "source_date_epoch": 1791616889,
-  "source_revision": "50a369a0a6f252ffe3d8dfbc00179e773fea76fc",
+  "source_date_epoch": 1791664275,
+  "source_revision": "9b4f31364b8abc5ecedb0a540d41d1bfaef93db9",
   "source_tree_dirty": false
 }

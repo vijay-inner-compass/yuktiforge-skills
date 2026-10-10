@@ -9,6 +9,14 @@ from yuktiforge.docint.docgen import registry
 from yuktiforge.docint.docgen.doc import Claim, Document, Table
 from yuktiforge.docint.knowledge.schema import KnowledgeModel
 
+_IDENT = re.compile(r"\S*[/_.:\\\-]\S*")        # a token with a path/name separator is an identifier (a route, file or symbol), whatever words it contains
+
+
+def _prose(text: str) -> str:
+    """The wording of a statement, without quoted code and without identifiers: a route named /security/dependencies is a fact about the route, not a security claim."""
+    return _IDENT.sub("", re.sub(r"`[^`]*`", "", text))
+
+
 SECURITYISH = re.compile(r"\b(secur\w*|complian\w*|encrypt\w*|authenticat\w*|authoriz\w*|gdpr|hipaa|pci|soc ?2|audit\w*|vulnerab\w*)\b", re.I)
 
 
@@ -55,7 +63,7 @@ def validate_document(doc: Document, model: KnowledgeModel) -> Report:
                 rep.defects.append(f"{where}: labelled VERIFIED but rests on {weak[0]} evidence")
         if "USER_SUPPLIED" in labels and not any(i in ent and (ent[i].cls == "user-supplied" or any(ev[x].cls == "user-supplied" for x in ent[i].evidence_ids if x in ev)) for i in ents):
             rep.defects.append(f"{where}: USER_SUPPLIED but no user-supplied entity is cited")
-        if dt.evidence_rules.no_security_verification and SECURITYISH.search(re.sub(r"`[^`]*`", "", text)) and "VERIFIED" in labels and "NEEDS_STAKEHOLDER_VALIDATION" not in labels:
+        if dt.evidence_rules.no_security_verification and SECURITYISH.search(_prose(text)) and "VERIFIED" in labels and "NEEDS_STAKEHOLDER_VALIDATION" not in labels:
             rep.defects.append(f"{where}: security/compliance statement labelled VERIFIED from source inspection alone")
         if "UNKNOWN" not in labels and "NEEDS_STAKEHOLDER_VALIDATION" not in labels and not evs and not ents and not text.startswith(("Scope:", "Note")):
             rep.defects.append(f"{where}: unlabelled-as-unknown statement with neither evidence nor entity")

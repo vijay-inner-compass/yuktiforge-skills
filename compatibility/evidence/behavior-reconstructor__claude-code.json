@@ -1,6 +1,6 @@
 {
   "agent": "claude-code",
-  "agent_cost_usd": 0.0366133,
+  "agent_cost_usd": 0.0379101,
   "agent_detected": {
     "agent": "claude-code",
     "found": true,
@@ -8,15 +8,15 @@
     "version": "2.1.284 (Claude Code)",
     "where": "/opt/homebrew/bin/claude"
   },
-  "agent_run_seconds": 14.9,
-  "agent_transcript_sha256": "4842fb951141cc2093cf21577e40946bd01cbb700a1bf86220664aef10962a89",
+  "agent_run_seconds": 15.8,
+  "agent_transcript_sha256": "65dbdbb356e183d7f378a171939bbc8cdf7242ea007b75f3913768c4ed30ec2b",
   "format": "yuktiforge-compat-evidence/1",
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "ba8dff4aeabc6de8e956fea4bab24aedb0dd8e7304a793322a3c15349a1f4ac0",
+  "package_content_sha256": "2d324e141d2763a442ced286cbb22930aac18a9fd21278b4290dd44b2511a93a",
   "skill_id": "behavior-reconstructor",
-  "skill_version": "0.1.1",
+  "skill_version": "0.1.2",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"
@@ -30,7 +30,7 @@
     "agent_invocation": {
       "detail": "the agent ran the skill's script from the installed folder and its output is correct",
       "facts": {
-        "answer": "**POST /orders**",
+        "answer": "**POST /orders**\n\nHandler: `api.app.create_order` (api/app.py:10-11)",
         "command": "python3 .claude/skills/behavior-reconstructor/scripts/yuktiforge_docs.py doctor"
       },
       "status": "PASS"

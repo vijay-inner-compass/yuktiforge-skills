@@ -1,6 +1,6 @@
 schema_version: '1.0'
 skill_id: documentation-intelligence
-version: 0.1.1
+version: 0.1.2
 description: 'Orchestrates the whole documentation workflow for an existing codebase: scan, evidence-backed
   knowledge model, documents (architecture, API, data, behaviour, requirements candidates, operations),
   diagrams, a published HTML/DOCX/PDF pack, a quality audit and change-driven updates. Use when the user

@@ -8,7 +8,7 @@
   "skill_id": "api-contract-reviewer",
   "skill_version": "0.1.0",
   "source": "examples/creator-sample/api-contract-reviewer",
-  "source_date_epoch": 1791616889,
-  "source_revision": "50a369a0a6f252ffe3d8dfbc00179e773fea76fc",
+  "source_date_epoch": 1791664275,
+  "source_revision": "9b4f31364b8abc5ecedb0a540d41d1bfaef93db9",
   "source_tree_dirty": false
 }

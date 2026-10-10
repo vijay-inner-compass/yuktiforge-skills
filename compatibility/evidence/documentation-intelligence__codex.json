@@ -14,9 +14,9 @@
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "787c9a3e42ed946dfeed6e1e264da1959695307faa8244b04bf9ddafd0d52ebb",
+  "package_content_sha256": "5db4d6919e455397305e31b4fb1a3b6667191363d594f674c699e83f595f0ce0",
   "skill_id": "documentation-intelligence",
-  "skill_version": "0.1.1",
+  "skill_version": "0.1.2",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"

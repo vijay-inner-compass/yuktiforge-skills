@@ -1,14 +1,14 @@
 {
   "builder": "docint-standalone",
   "built_by": "yuktiforge 0.5.0",
-  "content_sha256": "39bd14516fc949593915fe1a4f25057039b18edc82da9d852c74334f80827827",
+  "content_sha256": "be62b68f9610b6500c87277c4a59e1330fc56f0b39400cf140040ada5baa4f72",
   "file_count": 90,
   "format": "yuktiforge-provenance/1",
   "reproducible_build": "same source revision + same tool version + same SOURCE_DATE_EPOCH give byte-identical zips",
   "skill_id": "behavior-reconstructor",
-  "skill_version": "0.1.1",
+  "skill_version": "0.1.2",
   "source": "src/yuktiforge/skills/behavior_reconstructor",
-  "source_date_epoch": 1791616889,
-  "source_revision": "50a369a0a6f252ffe3d8dfbc00179e773fea76fc",
+  "source_date_epoch": 1791664275,
+  "source_revision": "9b4f31364b8abc5ecedb0a540d41d1bfaef93db9",
   "source_tree_dirty": false
 }

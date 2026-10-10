@@ -1,14 +1,14 @@
 {
   "builder": "docint-standalone",
   "built_by": "yuktiforge 0.5.0",
-  "content_sha256": "1c21d0d02a448dbfc6f42d26314320c90a70f44568ec41efcfcc3e0d0a37089b",
+  "content_sha256": "1add00ef423e6b88402eb60b1eecf3bda1f7f433a47675c43de6425020bb6ae8",
   "file_count": 90,
   "format": "yuktiforge-provenance/1",
   "reproducible_build": "same source revision + same tool version + same SOURCE_DATE_EPOCH give byte-identical zips",
   "skill_id": "requirements-reconstructor",
-  "skill_version": "0.1.1",
+  "skill_version": "0.1.2",
   "source": "src/yuktiforge/skills/requirements_reconstructor",
-  "source_date_epoch": 1791616889,
-  "source_revision": "50a369a0a6f252ffe3d8dfbc00179e773fea76fc",
+  "source_date_epoch": 1791664275,
+  "source_revision": "9b4f31364b8abc5ecedb0a540d41d1bfaef93db9",
   "source_tree_dirty": false
 }

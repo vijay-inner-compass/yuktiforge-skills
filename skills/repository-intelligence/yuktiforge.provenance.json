@@ -1,14 +1,14 @@
 {
   "builder": "docint-standalone",
   "built_by": "yuktiforge 0.5.0",
-  "content_sha256": "32e77f3856e6da4eed6e275b60399e94ff985c263f09c8c3d1db58e5f36ef102",
+  "content_sha256": "15e81ab3903b68698c9d90aaa88e35236f76249395edae1c5d6afd933b92d438",
   "file_count": 51,
   "format": "yuktiforge-provenance/1",
   "reproducible_build": "same source revision + same tool version + same SOURCE_DATE_EPOCH give byte-identical zips",
   "skill_id": "repository-intelligence",
-  "skill_version": "0.1.1",
+  "skill_version": "0.1.2",
   "source": "src/yuktiforge/skills/repository_intelligence",
-  "source_date_epoch": 1791616889,
-  "source_revision": "50a369a0a6f252ffe3d8dfbc00179e773fea76fc",
+  "source_date_epoch": 1791664275,
+  "source_revision": "9b4f31364b8abc5ecedb0a540d41d1bfaef93db9",
   "source_tree_dirty": false
 }

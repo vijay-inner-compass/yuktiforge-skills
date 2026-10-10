@@ -1,14 +1,14 @@
 {
   "builder": "docint-standalone",
   "built_by": "yuktiforge 0.5.0",
-  "content_sha256": "f42ed736fd4f5ebaf725ae1876a4a8b6d23f902e8eeab054edb2e9e2b9546d60",
+  "content_sha256": "1dce95de010386da501f0b6bdcf5a626aa40c0542d9bf3a17e66b5d5b4f47ea7",
   "file_count": 90,
   "format": "yuktiforge-provenance/1",
   "reproducible_build": "same source revision + same tool version + same SOURCE_DATE_EPOCH give byte-identical zips",
   "skill_id": "code-explainer",
-  "skill_version": "0.1.1",
+  "skill_version": "0.1.2",
   "source": "src/yuktiforge/skills/code_explainer",
-  "source_date_epoch": 1791616889,
-  "source_revision": "50a369a0a6f252ffe3d8dfbc00179e773fea76fc",
+  "source_date_epoch": 1791664275,
+  "source_revision": "9b4f31364b8abc5ecedb0a540d41d1bfaef93db9",
   "source_tree_dirty": false
 }

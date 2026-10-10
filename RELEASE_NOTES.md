@@ -1,6 +1,6 @@
-# Release notes: yuktiforge-skills 0.5.1
+# Release notes: yuktiforge-skills 0.5.2
 
-Built by yuktiforge 0.5.0 from source revision `50a369a0a6f252ffe3d8dfbc00179e773fea76fc`.
+Built by yuktiforge 0.5.0 from source revision `9b4f31364b8abc5ecedb0a540d41d1bfaef93db9`.
 
 **Release status: READY**
 
@@ -8,17 +8,17 @@ Built by yuktiforge 0.5.0 from source revision `50a369a0a6f252ffe3d8dfbc00179e77
 
 - `architecture-visualizer` 0.3.0 (release; architecture)
 - `api-contract-reviewer` 0.1.0 (preview; api-quality)
-- `repository-intelligence` 0.1.1 (preview; documentation)
-- `documentation-intelligence` 0.1.1 (preview; documentation)
-- `code-explainer` 0.1.1 (preview; documentation)
-- `behavior-reconstructor` 0.1.1 (preview; documentation)
-- `requirements-reconstructor` 0.1.1 (preview; documentation)
-- `architecture-documenter` 0.1.1 (preview; documentation)
-- `data-documenter` 0.1.1 (preview; documentation)
-- `api-integration-documenter` 0.1.1 (preview; documentation)
-- `operations-documenter` 0.1.1 (preview; documentation)
-- `documentation-quality-auditor` 0.1.1 (preview; documentation)
-- `documentation-publisher` 0.1.1 (preview; documentation)
+- `repository-intelligence` 0.1.2 (preview; documentation)
+- `documentation-intelligence` 0.1.2 (preview; documentation)
+- `code-explainer` 0.1.2 (preview; documentation)
+- `behavior-reconstructor` 0.1.2 (preview; documentation)
+- `requirements-reconstructor` 0.1.2 (preview; documentation)
+- `architecture-documenter` 0.1.2 (preview; documentation)
+- `data-documenter` 0.1.2 (preview; documentation)
+- `api-integration-documenter` 0.1.2 (preview; documentation)
+- `operations-documenter` 0.1.2 (preview; documentation)
+- `documentation-quality-auditor` 0.1.2 (preview; documentation)
+- `documentation-publisher` 0.1.2 (preview; documentation)
 
 ## What changed
 

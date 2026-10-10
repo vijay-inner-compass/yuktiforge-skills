@@ -1,6 +1,6 @@
 schema_version: '1.0'
 skill_id: operations-documenter
-version: 0.1.1
+version: 0.1.2
 description: 'Drafts an operations runbook from a repository: the configuration variables the code reads,
   container, compose, Terraform and pipeline definitions, runtime dependencies (databases, message channels,
   external services) and health endpoints, with a deployment diagram when infrastructure files exist.

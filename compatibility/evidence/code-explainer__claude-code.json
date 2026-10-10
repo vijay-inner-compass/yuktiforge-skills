@@ -1,6 +1,6 @@
 {
   "agent": "claude-code",
-  "agent_cost_usd": 0.0496394,
+  "agent_cost_usd": 0.0489801,
   "agent_detected": {
     "agent": "claude-code",
     "found": true,
@@ -8,15 +8,15 @@
     "version": "2.1.284 (Claude Code)",
     "where": "/opt/homebrew/bin/claude"
   },
-  "agent_run_seconds": 19.8,
-  "agent_transcript_sha256": "85be960f2d5c8ed45f4489d6826f029ddf7742f55c6b260a401e2ce80bfbbb10",
+  "agent_run_seconds": 18.9,
+  "agent_transcript_sha256": "058307967a9634dc57fc8836e8edf92e667c6c872948ecaa0a9bbdef8f7a9fa8",
   "format": "yuktiforge-compat-evidence/1",
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "57eaf9d9c0b4e015a7fc94c39308d807663c8d2ee187b525604b693bd6002f22",
+  "package_content_sha256": "cec695564527f8d3bfc61dc95a888a4343f85237cf3aefa2f732fd07dac7b038",
   "skill_id": "code-explainer",
-  "skill_version": "0.1.1",
+  "skill_version": "0.1.2",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"
@@ -30,7 +30,7 @@
     "agent_invocation": {
       "detail": "the agent ran the skill's script from the installed folder and its output is correct",
       "facts": {
-        "answer": "`api.shop.service.OrderService`",
+        "answer": "api.shop.service.OrderService",
         "command": "python3 .claude/skills/code-explainer/scripts/yuktiforge_docs.py doctor"
       },
       "status": "PASS"

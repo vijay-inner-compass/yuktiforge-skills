@@ -1,19 +1,19 @@
 {
   "manifest_version": "1.1",
   "skill_id": "documentation-publisher",
-  "skill_version": "0.1.1",
-  "spec_sha256": "df980953cbbd885b880760cb9d299259d3d4cc872f09dad0854148f17e7c3088",
+  "skill_version": "0.1.2",
+  "spec_sha256": "9047ac01698998485de5309011c68303a854c76308c668ac64a612f39a674610",
   "targets": [
     "claude-code",
     "github-copilot",
     "codex",
     "antigravity"
   ],
-  "created_at": "2026-10-10T07:21:29Z",
+  "created_at": "2026-10-10T20:31:15Z",
   "files": [
     {
       "path": "INSTALL.md",
-      "sha256": "090ff3713f38d6a46a82634274a384d212bc646ee86eee9d23b3065eae63ae97",
+      "sha256": "fc898cce30b12a8db3b82271586af5fd534a54e5d52e41a39838bab9108ff141",
       "size": 1984
     },
     {
@@ -293,8 +293,8 @@
     },
     {
       "path": "lib/yuktiforge/docint/docgen/validate.py",
-      "sha256": "ecc55e9a189f14dd994c5461f7932d9ab74ef238c0d91e20887abf9612e098db",
-      "size": 4374
+      "sha256": "8e4ae022d61e55c4151e8659555a6ee5d6b4ea32e8271eadd82c4a36675be52c",
+      "size": 4773
     },
     {
       "path": "lib/yuktiforge/docint/index.py",
@@ -623,7 +623,7 @@
     },
     {
       "path": "skillspec.yaml",
-      "sha256": "df980953cbbd885b880760cb9d299259d3d4cc872f09dad0854148f17e7c3088",
+      "sha256": "9047ac01698998485de5309011c68303a854c76308c668ac64a612f39a674610",
       "size": 1073
     },
     {
@@ -633,7 +633,7 @@
     },
     {
       "path": "yuktiforge.provenance.json",
-      "sha256": "9cef9cbda1136456b47ab473ae1ed05035bc1569b4a4b2c514f996bc279d7ba4",
+      "sha256": "8c11a7a3f9dfa0076e8a8555703a8aae2dabea8c79823d2e233f24643df2f678",
       "size": 597
     }
   ],

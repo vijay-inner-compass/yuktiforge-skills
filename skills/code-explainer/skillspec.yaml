@@ -1,6 +1,6 @@
 schema_version: '1.0'
 skill_id: code-explainer
-version: 0.1.1
+version: 0.1.2
 description: Explains what a module, symbol or whole repository declares and how its parts relate, as
   an evidence-backed document with file and line citations, written for a chosen audience (developer,
   architect, BA, QA, support, onboarding, executive). Use when the user asks what some code does, how

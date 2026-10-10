@@ -14,9 +14,9 @@
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "34da58a323cdcc8a760efd3a15ad6d4322eb9280e8372eb0d759ca1e650127a4",
+  "package_content_sha256": "46daad2efec0d8a2ab58e201c25c0291255cec7ffeae58125a2d17753f12e003",
   "skill_id": "code-explainer",
-  "skill_version": "0.1.1",
+  "skill_version": "0.1.2",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"

@@ -1,19 +1,19 @@
 {
   "manifest_version": "1.1",
   "skill_id": "repository-intelligence",
-  "skill_version": "0.1.1",
-  "spec_sha256": "1e1f70d1832ef56aeae56f0792d12ef8454326bf2e6270b878863d07af76ae92",
+  "skill_version": "0.1.2",
+  "spec_sha256": "de5175c55e11cb2f5809b7abaa40922bdb024ce9b66bae74b7a0319308649e09",
   "targets": [
     "claude-code",
     "github-copilot",
     "codex",
     "antigravity"
   ],
-  "created_at": "2026-10-10T07:21:29Z",
+  "created_at": "2026-10-10T20:31:15Z",
   "files": [
     {
       "path": "INSTALL.md",
-      "sha256": "7170c4df16c0c2029e68e6b3b57e072d52426a3100145bfa1d13e29b53b33e13",
+      "sha256": "628ae5a9f84fad516a1ef1732b4ff4eced1c265597e10492d0a6aaf76efb5bdf",
       "size": 1984
     },
     {
@@ -258,7 +258,7 @@
     },
     {
       "path": "skillspec.yaml",
-      "sha256": "1e1f70d1832ef56aeae56f0792d12ef8454326bf2e6270b878863d07af76ae92",
+      "sha256": "de5175c55e11cb2f5809b7abaa40922bdb024ce9b66bae74b7a0319308649e09",
       "size": 2197
     },
     {
@@ -268,7 +268,7 @@
     },
     {
       "path": "yuktiforge.provenance.json",
-      "sha256": "2f7e84060023b2b64106281f79e84d089d63f2243f8b4a4ebd3b7b9f682744ca",
+      "sha256": "65e3593ad3875ba60e9f8466b22281d2dbab3f6b0529fd40430a0f9739142641",
       "size": 596
     }
   ],

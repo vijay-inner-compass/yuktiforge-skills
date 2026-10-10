@@ -1,4 +1,4 @@
-# Skill catalog (release 0.5.1)
+# Skill catalog (release 0.5.2)
 
 Generated from each skill's manifest and from recorded test evidence; do not edit by hand. A skill is listed as `release` only if every release gate passed; otherwise it is `preview` or the release fails.
 
@@ -50,7 +50,7 @@ This skill reviews an OpenAPI 3 document provided as a JSON file to identify com
 
 ## repository-intelligence
 
-**Status:** `preview` · **Version:** 0.1.1 · **Family:** documentation · **License:** Apache-2.0
+**Status:** `preview` · **Version:** 0.1.2 · **Family:** documentation · **License:** Apache-2.0
 
 Scan a source repository of any language mix without running it: inventory, symbol and integration-boundary index, dependency index and an explicit coverage report, with file and line provenance for every fact.
 
@@ -70,11 +70,11 @@ Scan a source repository of any language mix without running it: inventory, symb
 - OpenAI Codex: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 - Antigravity: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 
-**Install:** unzip `dist/repository-intelligence-0.1.1-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
+**Install:** unzip `dist/repository-intelligence-0.1.2-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
 
 ## documentation-intelligence
 
-**Status:** `preview` · **Version:** 0.1.1 · **Family:** documentation · **License:** Apache-2.0
+**Status:** `preview` · **Version:** 0.1.2 · **Family:** documentation · **License:** Apache-2.0
 
 Orchestrates the whole documentation workflow for an existing codebase: scan, evidence-backed knowledge model, documents (architecture, API, data, behaviour, requirements candidates, operations), diagrams, a published HTML/DOCX/PDF pack, a quality audit and change-driven updates. Use when the user wants complete documentation or a knowledge-transfer pack, or is unsure which documentation step they need. Reconstructions are labelled and never presented as approved requirements.
 
@@ -94,11 +94,11 @@ Orchestrates the whole documentation workflow for an existing codebase: scan, ev
 - OpenAI Codex: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 - Antigravity: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 
-**Install:** unzip `dist/documentation-intelligence-0.1.1-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
+**Install:** unzip `dist/documentation-intelligence-0.1.2-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
 
 ## code-explainer
 
-**Status:** `preview` · **Version:** 0.1.1 · **Family:** documentation · **License:** Apache-2.0
+**Status:** `preview` · **Version:** 0.1.2 · **Family:** documentation · **License:** Apache-2.0
 
 Explains what a module, symbol or whole repository declares and how its parts relate, as an evidence-backed document with file and line citations, written for a chosen audience (developer, architect, BA, QA, support, onboarding, executive). Use when the user asks what some code does, how a module or class is structured, or wants onboarding material. Reads source without running it; states what it cannot know.
 
@@ -118,11 +118,11 @@ Explains what a module, symbol or whole repository declares and how its parts re
 - OpenAI Codex: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 - Antigravity: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 
-**Install:** unzip `dist/code-explainer-0.1.1-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
+**Install:** unzip `dist/code-explainer-0.1.2-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
 
 ## behavior-reconstructor
 
-**Status:** `preview` · **Version:** 0.1.1 · **Family:** documentation · **License:** Apache-2.0
+**Status:** `preview` · **Version:** 0.1.2 · **Family:** documentation · **License:** Apache-2.0
 
 Reconstructs observable behaviour from code: request paths, workflows, conditions and validations that look like business rules, and candidate use cases, each cited to file and line and labelled as a reconstruction that no stakeholder has approved. Use when the user asks what a system actually does, what rules the code enforces, or how a request flows through it. Does not run the code; does not claim business intent.
 
@@ -142,11 +142,11 @@ Reconstructs observable behaviour from code: request paths, workflows, condition
 - OpenAI Codex: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 - Antigravity: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 
-**Install:** unzip `dist/behavior-reconstructor-0.1.1-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
+**Install:** unzip `dist/behavior-reconstructor-0.1.2-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
 
 ## requirements-reconstructor
 
-**Status:** `preview` · **Version:** 0.1.1 · **Family:** documentation · **License:** Apache-2.0
+**Status:** `preview` · **Version:** 0.1.2 · **Family:** documentation · **License:** Apache-2.0
 
 Drafts a business requirements document and a software requirements specification from existing code, as clearly marked reconstructions: candidate requirements with evidence, explicit gaps where business intent is unknowable from code, and a traceability record that links requirements to code only when a named person says so. Use when the user needs requirements for a system that has none. Never presents a reconstruction as approved.
 
@@ -166,11 +166,11 @@ Drafts a business requirements document and a software requirements specificatio
 - OpenAI Codex: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 - Antigravity: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 
-**Install:** unzip `dist/requirements-reconstructor-0.1.1-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
+**Install:** unzip `dist/requirements-reconstructor-0.1.2-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
 
 ## architecture-documenter
 
-**Status:** `preview` · **Version:** 0.1.1 · **Family:** documentation · **License:** Apache-2.0
+**Status:** `preview` · **Version:** 0.1.2 · **Family:** documentation · **License:** Apache-2.0
 
 Documents a system's architecture from its code: system, solution and technology architecture, a high-level design and a low-level design, with C4 context, container, component, integration and data-flow diagrams drawn from the same evidence and checked against it. Use when the user asks for architecture documentation, an HLD/LLD or diagrams of an existing codebase. Diagrams that the evidence cannot support are reported as not generated, with the reason.
 
@@ -190,11 +190,11 @@ Documents a system's architecture from its code: system, solution and technology
 - OpenAI Codex: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 - Antigravity: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 
-**Install:** unzip `dist/architecture-documenter-0.1.1-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
+**Install:** unzip `dist/architecture-documenter-0.1.2-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
 
 ## data-documenter
 
-**Status:** `preview` · **Version:** 0.1.1 · **Family:** documentation · **License:** Apache-2.0
+**Status:** `preview` · **Version:** 0.1.2 · **Family:** documentation · **License:** Apache-2.0
 
 Documents the data a system uses: a data dictionary and database document of tables, columns, keys and queries found in code, SQL and ORM models, plus an entity-relationship diagram when column definitions exist. Use when the user asks what data a system stores, for a data dictionary, or for an ERD. Tables known only from queries are listed with columns marked UNKNOWN; no schema is invented.
 
@@ -214,11 +214,11 @@ Documents the data a system uses: a data dictionary and database document of tab
 - OpenAI Codex: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 - Antigravity: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 
-**Install:** unzip `dist/data-documenter-0.1.1-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
+**Install:** unzip `dist/data-documenter-0.1.2-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
 
 ## api-integration-documenter
 
-**Status:** `preview` · **Version:** 0.1.1 · **Family:** documentation · **License:** Apache-2.0
+**Status:** `preview` · **Version:** 0.1.2 · **Family:** documentation · **License:** Apache-2.0
 
 Documents a system's interfaces: HTTP routes, outbound calls to external services, message topics, OpenAPI contracts reconciled with code, and data flows between them, with an integration diagram and data-flow diagrams. Use when the user asks for an API catalog, what a service calls or exposes, or integration documentation. Contract-versus-code differences are reported, not resolved.
 
@@ -238,11 +238,11 @@ Documents a system's interfaces: HTTP routes, outbound calls to external service
 - OpenAI Codex: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 - Antigravity: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 
-**Install:** unzip `dist/api-integration-documenter-0.1.1-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
+**Install:** unzip `dist/api-integration-documenter-0.1.2-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
 
 ## operations-documenter
 
-**Status:** `preview` · **Version:** 0.1.1 · **Family:** documentation · **License:** Apache-2.0
+**Status:** `preview` · **Version:** 0.1.2 · **Family:** documentation · **License:** Apache-2.0
 
 Drafts an operations runbook from a repository: the configuration variables the code reads, container, compose, Terraform and pipeline definitions, runtime dependencies (databases, message channels, external services) and health endpoints, with a deployment diagram when infrastructure files exist. Use when the user wants run, deploy or support documentation. Procedures, alerts, SLOs and production topology are not in code and are listed as unknown for operators to supply.
 
@@ -262,11 +262,11 @@ Drafts an operations runbook from a repository: the configuration variables the 
 - OpenAI Codex: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 - Antigravity: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 
-**Install:** unzip `dist/operations-documenter-0.1.1-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
+**Install:** unzip `dist/operations-documenter-0.1.2-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
 
 ## documentation-quality-auditor
 
-**Status:** `preview` · **Version:** 0.1.1 · **Family:** documentation · **License:** Apache-2.0
+**Status:** `preview` · **Version:** 0.1.2 · **Family:** documentation · **License:** Apache-2.0
 
 Measures generated documentation against the evidence: eight pass/fail/not-tested gates (evidence, consistency with the model, invented identifiers, fabricated requirements, privacy, approval honesty, freshness, completeness), a coverage report, and a git-based change report that says which documents and sections a code change makes stale. Use when the user wants to know whether documentation can be trusted or what to refresh after a change. Reports gates separately; never a single score.
 
@@ -286,11 +286,11 @@ Measures generated documentation against the evidence: eight pass/fail/not-teste
 - OpenAI Codex: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 - Antigravity: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 
-**Install:** unzip `dist/documentation-quality-auditor-0.1.1-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
+**Install:** unzip `dist/documentation-quality-auditor-0.1.2-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
 
 ## documentation-publisher
 
-**Status:** `preview` · **Version:** 0.1.1 · **Family:** documentation · **License:** Apache-2.0
+**Status:** `preview` · **Version:** 0.1.2 · **Family:** documentation · **License:** Apache-2.0
 
 Publishes the documentation as a pack: Markdown sources, an HTML site, a DOCX and an A4 PDF with table of contents and diagrams, then checks links, DOCX structure and rendered PDF pages. Use when the user wants documents to share or archive. A format whose tool is missing (pandoc, Chromium, LibreOffice) is reported UNAVAILABLE, not faked; every export is QA-checked.
 
@@ -310,7 +310,7 @@ Publishes the documentation as a pack: Markdown sources, an HTML site, a DOCX an
 - OpenAI Codex: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 - Antigravity: **UNVERIFIED** — not exercised: agent_discovery, agent_invocation
 
-**Install:** unzip `dist/documentation-publisher-0.1.1-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
+**Install:** unzip `dist/documentation-publisher-0.1.2-<agent>.zip` at your project root (see `docs/install-<agent>.md`); the skill's own `INSTALL.md` has the details.
 
 ## Compatibility matrix
 
