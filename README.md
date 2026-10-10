@@ -88,6 +88,51 @@ yuktiforge verify --project /path/to/your/project
 Step-by-step guides: [Claude Code](docs/install-claude-code.md) · [GitHub Copilot](docs/install-github-copilot.md) · [OpenAI Codex](docs/install-codex.md) · [Antigravity](docs/install-antigravity.md).
 Walk-through with real output: [docs/tutorial.md](docs/tutorial.md). Problems: [troubleshooting](docs/tutorial.md#troubleshooting).
 
+## Using the documentation skills, step by step
+
+The eleven documentation skills read a source repository and write evidence-backed documents and diagrams. They never run, build or change the repository.
+For a first try install only `documentation-intelligence`: it carries every action; the narrower skills carry subsets and can be installed alone.
+
+1. **Prerequisites (once).** Python 3.12+, and the packages `pydantic` and `PyYAML` at the versions in the skill's `requirements.lock`. The skill can build its own private environment (the only step that downloads anything, and only when you run it): `python3 .claude/skills/<skill>/scripts/bootstrap.py`. Optional tools for diagrams and exports: Graphviz (`dot`), pandoc, Chromium (Playwright) and LibreOffice. A missing tool means that output is reported UNAVAILABLE; nothing fails silently.
+2. **Install into the project you want to document** (Claude Code shown; use the other agent's zip for other agents):
+   ```bash
+   unzip dist/documentation-intelligence-0.1.0-claude-code.zip -d /path/to/your/project
+   ```
+3. **Check it works.**
+   ```bash
+   cd /path/to/your/project
+   python3 .claude/skills/documentation-intelligence/scripts/yuktiforge_docs.py doctor
+   python3 .claude/skills/documentation-intelligence/tests/smoke.py        # expect: smoke: pass
+   ```
+4. **Use it through your agent**, in plain words. Examples: "Document this repository into docs/ws and tell me which diagrams could not be generated." · "What HTTP routes, tables and external calls does this code have?" · "Audit the generated documentation and report each gate."
+5. **Or run it directly.**
+   ```bash
+   S=.claude/skills/documentation-intelligence/scripts/yuktiforge_docs.py
+   python3 $S run --repo . --out docs/ws                                            # scan, model, documents, diagrams
+   python3 $S audit --input docs/ws/docs --model docs/ws/model --repo .            # PASS / FAIL / NOT_TESTED per gate
+   python3 $S publish --model docs/ws/model --out docs/pack                         # HTML, DOCX, A4 PDF with QA
+   python3 $S update --model docs/ws/model --docs docs/ws/docs --repo . --since <git-revision>   # what a change makes stale (add --apply to regenerate)
+   ```
+6. **Read the output.** Under `--out`: `scan/` (facts), `model/` (knowledge model), `docs/*.md` (documents), `diagrams/` (and `diagrams.json`, which lists the diagrams that could not be generated and why).
+   Every statement carries a label: `[VERIFIED]` observed in code with file and line, `[INFERRED]` derived by a stated rule, `[USER_SUPPLIED]` stated by a named person, `[UNKNOWN]` not established, `[NEEDS_STAKEHOLDER_VALIDATION]` needs a business owner.
+   Requirements and rules are **reconstructions, never approved**; only a named person can approve (`model approve`), the skill never does. Add what people know with `model assert ... --by "<name>"`; re-runs keep it.
+7. **Choose a narrower skill if you only need part of it.**
+
+| You want | Skill |
+|---|---|
+| Facts about a codebase | `repository-intelligence` |
+| One module or class explained | `code-explainer` |
+| What the system does, rules, use cases | `behavior-reconstructor` |
+| BRD / SRS drafts | `requirements-reconstructor` |
+| Architecture, HLD/LLD, diagrams | `architecture-documenter` |
+| Tables and an ERD | `data-documenter` |
+| APIs, integrations, data flow | `api-integration-documenter` |
+| Operations runbook draft | `operations-documenter` |
+| Can the documentation be trusted? | `documentation-quality-auditor` |
+| HTML / DOCX / PDF to share | `documentation-publisher` |
+
+Generated documents may quote your code, so treat them with the same confidentiality as the repository. Only Claude Code is verified for these skills so far; see the compatibility matrix.
+
 ## Examples
 
 <!-- yuktiforge:generated:examples -->
