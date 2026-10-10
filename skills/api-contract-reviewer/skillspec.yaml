@@ -1,0 +1,90 @@
+schema_version: '1.0'
+skill_id: api-contract-reviewer
+version: 0.1.0
+description: This skill reviews an OpenAPI 3 document provided as a JSON file to identify common contract
+  problems. Use this when you need to programmatically check an OpenAPI specification file for adherence
+  to best practices.
+inputs:
+- kind: specification
+  languages:
+  - openapi-3
+  description: The OpenAPI 3 document content in JSON format.
+outputs:
+- kind: report
+  format: json
+analyzers: []
+permissions:
+  network: false
+  secrets: []
+  commands: []
+  filesystem_write: []
+dependencies: []
+targets:
+- claude-code
+- github-copilot
+- codex
+- antigravity
+assumptions: []
+workflow:
+- Attempt to parse the input JSON file to check for the `invalid-json` rule.
+- Check if the document contains a top-level `security` field; if not, and no operation defines its own
+  security, report the `no-security` rule.
+- Iterate through all defined operations within the document to check for the `missing-operation-id` rule.
+- For every operation, check if it declares any 4xx, 5xx, or default response to report the `no-error-response`
+  rule if none are present.
+- Construct the final JSON output containing the total count of reported issues and an array detailing
+  each issue with its rule, path, and message.
+examples:
+- name: defective-api
+  input: '{"openapi": "3.0.0", "info": {"title": "Pets", "version": "1"}, "paths": {"/pets": {"get": {"responses":
+    {"200": {"description": "ok"}}}, "post": {"operationId": "addPet", "responses": {"201": {"description":
+    "created"}, "400": {"description": "bad"}}}}}}'
+  expect:
+  - path: issue_count
+    op: equals
+    value: 3
+  - path: issues.*.rule
+    op: contains
+    value: missing-operation-id
+  - path: issues.*.rule
+    op: contains
+    value: no-error-response
+  - path: issues.*.rule
+    op: contains
+    value: no-security
+- name: clean-api
+  input: '{"openapi": "3.0.0", "info": {"title": "Pets", "version": "1"}, "security": [{"key": []}], "paths":
+    {"/pets": {"get": {"operationId": "listPets", "responses": {"200": {"description": "ok"}, "default":
+    {"description": "err"}}}}}}'
+  expect:
+  - path: issue_count
+    op: equals
+    value: 0
+  - path: issues.0
+    op: absent
+    value: null
+- name: not-json
+  input: this is { not json
+  expect:
+  - path: issues.0.rule
+    op: equals
+    value: invalid-json
+- name: path-format
+  input: '{"openapi": "3.0.0", "info": {"title": "T", "version": "1"}, "security": [{"k": []}], "paths":
+    {"/pets/{id}": {"delete": {"operationId": "d", "responses": {"200": {"description": "ok"}}}}}}'
+  expect:
+  - path: issues.0.path
+    op: equals
+    value: DELETE /pets/{id}
+  - path: issues.0.rule
+    op: equals
+    value: no-error-response
+  - path: issue_count
+    op: equals
+    value: 1
+requirement: 'Create a skill that reviews an OpenAPI 3 document given as a JSON file and reports contract
+  problems. Report these rules: `missing-operation-id` (an operation has no operationId), `no-error-response`
+  (an operation declares no 4xx, 5xx or default response), `no-security` (the document has no top-level
+  `security` and no operation defines its own), and `invalid-json` (the file is not valid JSON). Output
+  a JSON object with `issue_count` (integer) and `issues` (an array of objects with `rule`, `path` like
+  `GET /pets`, and `message`). Never modify the file.'

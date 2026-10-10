@@ -1,0 +1,22 @@
+[
+  {
+    "path": "issue_count",
+    "op": "equals",
+    "value": 3
+  },
+  {
+    "path": "issues.*.rule",
+    "op": "contains",
+    "value": "missing-operation-id"
+  },
+  {
+    "path": "issues.*.rule",
+    "op": "contains",
+    "value": "no-error-response"
+  },
+  {
+    "path": "issues.*.rule",
+    "op": "contains",
+    "value": "no-security"
+  }
+]

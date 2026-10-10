@@ -1,0 +1,12 @@
+[
+  {
+    "path": "issue_count",
+    "op": "equals",
+    "value": 0
+  },
+  {
+    "path": "issues.0",
+    "op": "absent",
+    "value": null
+  }
+]

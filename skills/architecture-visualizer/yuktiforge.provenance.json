@@ -1,0 +1,14 @@
+{
+  "builder": "visualizer-standalone",
+  "built_by": "yuktiforge 0.5.0",
+  "content_sha256": "a980749f3743209f9463c6c8bf4ec5e11582bf2596d004f2596f5373609eee97",
+  "file_count": 39,
+  "format": "yuktiforge-provenance/1",
+  "reproducible_build": "same source revision + same tool version + same SOURCE_DATE_EPOCH give byte-identical zips",
+  "skill_id": "architecture-visualizer",
+  "skill_version": "0.3.0",
+  "source": "src/yuktiforge/skills/architecture_visualizer",
+  "source_date_epoch": 1791612735,
+  "source_revision": "2ce10624d5dba675a7210178711075f6b0ebdd31",
+  "source_tree_dirty": false
+}

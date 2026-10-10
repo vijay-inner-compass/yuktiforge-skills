@@ -1,0 +1,47 @@
+schema_version: '1.0'
+skill_id: documentation-quality-auditor
+version: 0.1.0
+description: 'Measures generated documentation against the evidence: eight pass/fail/not-tested gates
+  (evidence, consistency with the model, invented identifiers, fabricated requirements, privacy, approval
+  honesty, freshness, completeness), a coverage report, and a git-based change report that says which
+  documents and sections a code change makes stale. Use when the user wants to know whether documentation
+  can be trusted or what to refresh after a change. Reports gates separately; never a single score.'
+inputs:
+- kind: repository
+  languages: []
+  description: ''
+outputs:
+- kind: evaluation
+  format: json
+- kind: coverage-report
+  format: html
+- kind: change-report
+  format: markdown
+analyzers: []
+permissions:
+  network: false
+  secrets: []
+  commands:
+  - python3
+  - dot
+  - pandoc
+  - node
+  - git
+  filesystem_write:
+  - docs
+dependencies:
+- name: pydantic
+  version_spec: ==2.14.0
+  reason: model validation
+- name: pyyaml
+  version_spec: ==6.0.3
+  reason: reading YAML files
+targets:
+- claude-code
+- github-copilot
+- codex
+- antigravity
+assumptions: []
+workflow: []
+examples: []
+requirement: ''

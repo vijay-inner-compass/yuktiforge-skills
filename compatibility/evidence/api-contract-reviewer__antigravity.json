@@ -1,0 +1,54 @@
+{
+  "agent": "antigravity",
+  "agent_cost_usd": null,
+  "agent_detected": {
+    "agent": "antigravity",
+    "found": true,
+    "note": "GUI application: no CLI, so no non-interactive test is possible",
+    "version": "2.15.1",
+    "where": "/Applications/Antigravity.app"
+  },
+  "agent_run_seconds": null,
+  "agent_transcript_sha256": null,
+  "format": "yuktiforge-compat-evidence/1",
+  "notes": [],
+  "package_content_sha256": "f6e8f1e847d0279422461e94203d48cca07bd5c6fae057d0943369be8dba278c",
+  "skill_id": "api-contract-reviewer",
+  "skill_version": "0.1.0",
+  "tested_on": {
+    "platform": "Darwin arm64",
+    "python": "3.12.14"
+  },
+  "tests": {
+    "agent_discovery": {
+      "detail": "antigravity is a GUI application with no non-interactive mode; folder layout was installed and verified, discovery and invocation were not exercised",
+      "facts": {},
+      "status": "NOT_TESTED"
+    },
+    "agent_invocation": {
+      "detail": "antigravity is a GUI application with no non-interactive mode; folder layout was installed and verified, discovery and invocation were not exercised",
+      "facts": {},
+      "status": "NOT_TESTED"
+    },
+    "clean_install": {
+      "detail": "installed into a clean project and verified (21 files)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "detail": "uninstall, rollback, uninstall, re-install and verify all succeeded",
+      "facts": {},
+      "status": "PASS"
+    },
+    "package_valid": {
+      "detail": "manifest hashes verified",
+      "facts": {},
+      "status": "PASS"
+    },
+    "script_execution": {
+      "detail": "the installed entry point ran and produced the expected output",
+      "facts": {},
+      "status": "PASS"
+    }
+  }
+}

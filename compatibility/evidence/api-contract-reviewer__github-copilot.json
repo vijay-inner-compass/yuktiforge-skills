@@ -1,0 +1,57 @@
+{
+  "agent": "github-copilot",
+  "agent_cost_usd": null,
+  "agent_detected": {
+    "agent": "github-copilot",
+    "found": true,
+    "note": "",
+    "version": "GitHub Copilot CLI 1.0.95.",
+    "where": "/opt/homebrew/bin/copilot"
+  },
+  "agent_run_seconds": 9.2,
+  "agent_transcript_sha256": "5e90bfab84783b84955f62b62a23371e34fe37cebcbc377f5a06d8bb88193599",
+  "format": "yuktiforge-compat-evidence/1",
+  "notes": [],
+  "package_content_sha256": "ce6b278fd8007523f488c79802d68532f26870c0b6d49c398147de19941765f8",
+  "skill_id": "api-contract-reviewer",
+  "skill_version": "0.1.0",
+  "tested_on": {
+    "platform": "Darwin arm64",
+    "python": "3.12.14"
+  },
+  "tests": {
+    "agent_discovery": {
+      "detail": "the agent loaded the skill (own event evidence)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "agent_invocation": {
+      "detail": "the agent ran the skill's script from the installed folder and its output is correct",
+      "facts": {
+        "answer": "6",
+        "command": "python3 .github/skills/api-contract-reviewer/scripts/api_contract_reviewer.py api.json"
+      },
+      "status": "PASS"
+    },
+    "clean_install": {
+      "detail": "installed into a clean project and verified (21 files)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "detail": "uninstall, rollback, uninstall, re-install and verify all succeeded",
+      "facts": {},
+      "status": "PASS"
+    },
+    "package_valid": {
+      "detail": "manifest hashes verified",
+      "facts": {},
+      "status": "PASS"
+    },
+    "script_execution": {
+      "detail": "the installed entry point ran and produced the expected output",
+      "facts": {},
+      "status": "PASS"
+    }
+  }
+}

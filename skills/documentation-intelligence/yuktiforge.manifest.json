@@ -1,0 +1,641 @@
+{
+  "manifest_version": "1.1",
+  "skill_id": "documentation-intelligence",
+  "skill_version": "0.1.0",
+  "spec_sha256": "89f40c122c3ef62cd4e2676b8a7cae696dfd09d6c3bacab240ce348b7a7051cf",
+  "targets": [
+    "claude-code",
+    "github-copilot",
+    "codex",
+    "antigravity"
+  ],
+  "created_at": "2026-10-10T06:12:15Z",
+  "files": [
+    {
+      "path": "INSTALL.md",
+      "sha256": "516f3c4147456eb03ee325030e4d9be3f52b8cc1830867cf3b378043d706086a",
+      "size": 2005
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "size": 10174
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "1c867d37aaee9ce460fb473bc56432c468ab1923a83b099204ebafbc8079dcac",
+      "size": 4601
+    },
+    {
+      "path": "examples/shop/api/app.py",
+      "sha256": "c83c30f3b1fdcf582219a1287e06997c6c8676d8d1247e709ffbe745dc92c6dd",
+      "size": 316
+    },
+    {
+      "path": "examples/shop/api/requirements.txt",
+      "sha256": "2992312c2f2b53cf51932878939cb4824917828df92ecc27a72d2772b164dfc0",
+      "size": 28
+    },
+    {
+      "path": "examples/shop/api/shop/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "examples/shop/api/shop/repo.py",
+      "sha256": "e335eaa782fb6b058d62e9d126f38b031c1e2e29052f4fafec86badefcd4469b",
+      "size": 336
+    },
+    {
+      "path": "examples/shop/api/shop/service.py",
+      "sha256": "ac871fe556adf6e246bdcd69f6bd3cf13c8c152905373c7d1705aeca0de3d964",
+      "size": 460
+    },
+    {
+      "path": "examples/shop/report.rs",
+      "sha256": "8fd9fb36a4f5bb323361731076887dd0dcec5abcd6d205566f7eef74a8772ec9",
+      "size": 41
+    },
+    {
+      "path": "examples/shop/worker/go.mod",
+      "sha256": "69a7ff04f363b8c0646fc6066c67d668f53902e7a127aa1de3db4fe48708058f",
+      "size": 35
+    },
+    {
+      "path": "examples/shop/worker/main.go",
+      "sha256": "e73e7c0e7927a2a5fb25a4167207fabf2fc8b808d3a9d13427c2c4fed5eff556",
+      "size": 161
+    },
+    {
+      "path": "lib/yuktiforge/__init__.py",
+      "sha256": "8a23a1784792326785befa8f396c7b41f015c8e15647c492a26dddc1461676cc",
+      "size": 73
+    },
+    {
+      "path": "lib/yuktiforge/docint/__init__.py",
+      "sha256": "76698af5562fd0063aa291ef812f3fad47cc806ae92fbe7351892484fdff3a6e",
+      "size": 224
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/__init__.py",
+      "sha256": "25e00ec2fd57bc74e92989b1ea712408bd178fb98fefb3b562b663b088346831",
+      "size": 373
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/base.py",
+      "sha256": "bffc610d93ece80aaf405428f41b3593fd6bab8f37a621015d4a48b31ef3b99b",
+      "size": 3606
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/clike.py",
+      "sha256": "4c0a4c6561c71640e270d5d70ca5fcd50015788cdd99e32153f19779e8a20e00",
+      "size": 3301
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/csharp.py",
+      "sha256": "d1868a214a320f52bd8eaeb914545c1de409cf24bbb3ee2225157d5ec9942055",
+      "size": 14812
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/golang.py",
+      "sha256": "179a555d60e3c2e1f1f2bd87f6b9dbd52d1af65cff65fb4fe7ad89c6635d94fc",
+      "size": 10405
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/java.py",
+      "sha256": "948cb733b6dd7f4791c209180c637edbee12ee43028b01c2d720f30a75c06370",
+      "size": 17029
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/knowledge.py",
+      "sha256": "7de4767b7c093a3fc13c5961a6ebbc63acf075b93eb5bde1921ede26fb4a3081",
+      "size": 3289
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/lexer.py",
+      "sha256": "4c8fca648de9106acced98de61057648751e29513ecad61273a3c6ac46639145",
+      "size": 5333
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/lexfacts.py",
+      "sha256": "ef01956fa1e8532d75b30aeee1aefc25dd3a27ff1618c01feb7cc5d7fe0908ef",
+      "size": 10175
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/manifests.py",
+      "sha256": "96dfe6cdf256bc97c9a1b1dabb53e22221ac5710f9ec3c340d7e7250c2195b7f",
+      "size": 11549
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/python_ast.py",
+      "sha256": "287976b6b7ed8557ab90d450a02d89d238ad5ee3624ce2c341f9e57f93cb6cbf",
+      "size": 24246
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/resolvers.py",
+      "sha256": "9b01b04a4eb4a5b4bf17aa35ee6e710199f9480443ccce520e52677aea061e86",
+      "size": 12545
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/sqlutil.py",
+      "sha256": "a093c7c08c8ce13aba0729da1e238caa1b7b0ef642852379c86900f83bd901b8",
+      "size": 1964
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/structured.py",
+      "sha256": "e4dc30c22f50a06c2794a70679fa667a3acbbc0e1c44ac829a77bceaecfa4009",
+      "size": 14193
+    },
+    {
+      "path": "lib/yuktiforge/docint/analyzers/tsjs.py",
+      "sha256": "3f23d66049103f68702f7612997dc6a34ed340f05927087aab95e12127d680e5",
+      "size": 17788
+    },
+    {
+      "path": "lib/yuktiforge/docint/audit/__init__.py",
+      "sha256": "d66f18bdbb104e248e6e346686e03bdcd5e34ef850612ace6bb77157b96ad972",
+      "size": 114
+    },
+    {
+      "path": "lib/yuktiforge/docint/audit/cli.py",
+      "sha256": "f45841d8274161119e5a61d4719d2c2fa2e9449224c775eb063efa4c8287d785",
+      "size": 5662
+    },
+    {
+      "path": "lib/yuktiforge/docint/audit/evaluation.py",
+      "sha256": "c44146adb9185557b86950ce2b4a215ccc9c96c39694963b38457d7445afc419",
+      "size": 21660
+    },
+    {
+      "path": "lib/yuktiforge/docint/audit/html.py",
+      "sha256": "14298744edaa2ef6bae75cc1b49129965a5c1d31bb9650cf8c98b89f821b1425",
+      "size": 4636
+    },
+    {
+      "path": "lib/yuktiforge/docint/audit/loader.py",
+      "sha256": "04a45ab6699748adcf9608f9311383f774c7a9b88219905be5dd8ce61c1af8fe",
+      "size": 2094
+    },
+    {
+      "path": "lib/yuktiforge/docint/audit/states.py",
+      "sha256": "4203d615854563e2ff058a6f8f2d402582ae6d89136072c894d84cee051f3206",
+      "size": 1759
+    },
+    {
+      "path": "lib/yuktiforge/docint/audit/update.py",
+      "sha256": "8372ee0330f9744dd56b11fa8aed024342587cddff08f9cd7d8d4bfe75bc55d6",
+      "size": 12398
+    },
+    {
+      "path": "lib/yuktiforge/docint/cmds.py",
+      "sha256": "bde943b65b19e19cf6df7d85d0c8008d9e89c68563641521066d9a76c6e19761",
+      "size": 2963
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/__init__.py",
+      "sha256": "76b50bdc47fe6100154976e472b24508be8cb5e94c89302846841881ff545403",
+      "size": 149
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/cli.py",
+      "sha256": "e2bd6f0e3d06e9626aa8c3d49e436fb9f1cd6badf1b36a67d650da4485546360",
+      "size": 7976
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/contradictions.py",
+      "sha256": "76528447a1a4fe88c7125fe83cf0b3cda35f3771dc9c6c2fb0360abd757f7817",
+      "size": 1173
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/doc.py",
+      "sha256": "e42ab749b6134db0c82e6be8789049d4b76475efc0a7f3c30204f1feaa0fa3c2",
+      "size": 4087
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/engine.py",
+      "sha256": "9c8ba2b581bdd10072fe9590ea63f2f7f85dde5ab26dac3c1f5019e54adcb0b1",
+      "size": 4416
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/extensions/__init__.py",
+      "sha256": "182db3101a64d2b23418e4e5cda25ccf44248ae3409709ab7b464d5cde84fc43",
+      "size": 239
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/extensions/dataflow.py",
+      "sha256": "d1f1259e7421b8822fe7ea20dbd8185f8ef186737e1ef632da8431387f5010c6",
+      "size": 3379
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/extensions/operations.py",
+      "sha256": "d6fb6c9943108a0d0f55375786acc3eeb0398d9db0a3dc36c22c7bee3976b3f7",
+      "size": 3768
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/glossary.py",
+      "sha256": "32bc5c1799e35919261f234bf8e103d229d9ba18220eb11c910232420e696a37",
+      "size": 2851
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/helpers.py",
+      "sha256": "110bfa6af237ea7ea9763476a8db50170de340049e69a2b081ce55fe236ced4b",
+      "size": 8611
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/outputs.py",
+      "sha256": "d8152bc981433d982987c1d0f75b860c3aae835b343ed2d337a30b5979d1f047",
+      "size": 2598
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/regen.py",
+      "sha256": "3910d9fdee46042816305a1f33daf2c967ec7285117dbe0c01e84701411bcb17",
+      "size": 1540
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/registry.py",
+      "sha256": "cd30a8da0fd7f12433a0ee8ff568a75fa4eca232060c8377462461f10a78b870",
+      "size": 2452
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/render.py",
+      "sha256": "6e5b624cb97b04abd88c5a5523d85ee90a80e9156ec0f37d50f4a9686164c0c4",
+      "size": 6261
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/review.py",
+      "sha256": "1aa8716da4619bce0fc093825acc4906b9d860970fb532cd4ec47d855531ca73",
+      "size": 4065
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/spi.py",
+      "sha256": "8e0615a410741565d94fd95b1e2a794cd13a2d8852861d0d2581fee32428f676",
+      "size": 2588
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/trace.py",
+      "sha256": "d9df2db56e68c9cb55ac93175377252da5f9e6f454ed27cad92acda3adb9b295",
+      "size": 2580
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/types_arch.py",
+      "sha256": "ac8868fa1042a57d517f719fbad2dcf79ada169a1e6ab017ae25f738b3a7f502",
+      "size": 19882
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/types_catalog.py",
+      "sha256": "0501f5d7f357354ad9a5fdf627443de70f927e4999f5455fac0379257a1c1562",
+      "size": 12221
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/types_req.py",
+      "sha256": "de7c187527c99b23905c36f047cea0353bdbd40072c70c1c43363b6c1743bee1",
+      "size": 27829
+    },
+    {
+      "path": "lib/yuktiforge/docint/docgen/validate.py",
+      "sha256": "ecc55e9a189f14dd994c5461f7932d9ab74ef238c0d91e20887abf9612e098db",
+      "size": 4374
+    },
+    {
+      "path": "lib/yuktiforge/docint/index.py",
+      "sha256": "6d58ee77fbd4564df5d001d3194d9f2923aa5984d5501ae184b84b29d47dc026",
+      "size": 4051
+    },
+    {
+      "path": "lib/yuktiforge/docint/inventory.py",
+      "sha256": "7c2d01d83acab3e8f89292b1d67b7095f4c53422985ee6758c21507cc56e49c0",
+      "size": 9706
+    },
+    {
+      "path": "lib/yuktiforge/docint/knowledge/__init__.py",
+      "sha256": "de7cf5fa4be6365e70a3120a36e2aa714ae6cf39730a16db7c82e2855177a543",
+      "size": 148
+    },
+    {
+      "path": "lib/yuktiforge/docint/knowledge/adapter_viz.py",
+      "sha256": "390810e4bb0b68c3b0551f351cec6edd7dc591d947a92aea3e7b4211e780ecf4",
+      "size": 9655
+    },
+    {
+      "path": "lib/yuktiforge/docint/knowledge/build.py",
+      "sha256": "5b7b5047ae762f38fa88c7cfa97dff7ce30a6adfaa451e56c4107c19c25d3880",
+      "size": 25700
+    },
+    {
+      "path": "lib/yuktiforge/docint/knowledge/cli.py",
+      "sha256": "44ef36a970d89e653f4f8965e14bbe444bd9e6b120221b618a6fe59ce0aa3e3f",
+      "size": 10205
+    },
+    {
+      "path": "lib/yuktiforge/docint/knowledge/graph.py",
+      "sha256": "d46af71b4ca78541fdc31e9a837f1c0fde72c52f8eca4df88f922fd78b2c439d",
+      "size": 7625
+    },
+    {
+      "path": "lib/yuktiforge/docint/knowledge/ids.py",
+      "sha256": "fcd21739158a48501c41e1d6d47505d0e45319afba2e3d118734575c2dfb7be9",
+      "size": 1424
+    },
+    {
+      "path": "lib/yuktiforge/docint/knowledge/migrate.py",
+      "sha256": "56638b25f0a133ee074dda7160367e29d5acea8173992077262d0c151c5614fe",
+      "size": 2213
+    },
+    {
+      "path": "lib/yuktiforge/docint/knowledge/outputs.py",
+      "sha256": "b9bac7728f4c5d7757db64cc182051d15563756cf9a04f956d48022b53ea8b47",
+      "size": 3143
+    },
+    {
+      "path": "lib/yuktiforge/docint/knowledge/schema.py",
+      "sha256": "19e3c1e1a0276e562be69500c7fd22b26c6b301e17a29e39d41bdbb749bca194",
+      "size": 4629
+    },
+    {
+      "path": "lib/yuktiforge/docint/knowledge/store.py",
+      "sha256": "58e786f63fa959ff298d9555bd3c071b52b872faf0965e2eda90b8f6aebb8fbf",
+      "size": 14246
+    },
+    {
+      "path": "lib/yuktiforge/docint/knowledge/validate.py",
+      "sha256": "ef633d6908d326265255abe0933f3c2d5cde6744517e34401b399de696f4f4e7",
+      "size": 6872
+    },
+    {
+      "path": "lib/yuktiforge/docint/model.py",
+      "sha256": "61a136e7c5256b45d61c2c9e9853983f1d0ad3e7eaf55575934347e37ff73fca",
+      "size": 4850
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/__init__.py",
+      "sha256": "c72aa74373b5a2efbcd368d9db105a65e1996df479962d4f437fc34e19445ac3",
+      "size": 157
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/assets/pack.css",
+      "sha256": "aec6dbdaa22e2a1cf0377f2f225fb1abff0d2eda21a18da25001b831aff38853",
+      "size": 2455
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/assets/pdf_tool.src",
+      "sha256": "3a1ddd046c1fd2bfd511aa23087f70eef2c79641e1aebe1ebf50a8254ab0ec87",
+      "size": 3098
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/assets/render_pdf.cjs",
+      "sha256": "0c2acc63cc620623161de2c1f98b4afce34a9aa08e961b9c6360e2f448705a30",
+      "size": 1721
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/assets/site.css",
+      "sha256": "925534f1da492ae58784500f5f19292bae704432084c17a7e903893d6cbcc217",
+      "size": 3086
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/cli.py",
+      "sha256": "9bf8490963464f14847bb519683bfbd98b37b1c1a1d70624401dce52fc993c2c",
+      "size": 3813
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/diagrams.py",
+      "sha256": "85fdf8bca76069f2cb782069a23933d27cd1793b991ecc75c5306840608ab4b5",
+      "size": 38724
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/docx.py",
+      "sha256": "0bb05319cccb2d3f334af23f089ca577023ce75c8033e7fe94686e15ae985e93",
+      "size": 8298
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/pack.py",
+      "sha256": "29c128191e80a727defe4727852bab805671a0ed1d7ed5a84223265bbafc05aa",
+      "size": 20799
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/qa.py",
+      "sha256": "03f517f5e62bab82d13dcd19248547985b2bfc0c9f4019f897587dfe4aa4230a",
+      "size": 6039
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/render_diagrams.py",
+      "sha256": "c21b8283a20668af604b54fc1b6cfd1bb91ae730c0b65873282769d0f3c3672f",
+      "size": 3424
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/site.py",
+      "sha256": "7870ecfdb87a67b72e2639d53dffa21239efeab340a6710c8016b6fcc780833a",
+      "size": 15697
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/tools.py",
+      "sha256": "34385516eab629cf70c4fc36a3474cca620719c9782da65716366e4d2003f728",
+      "size": 4468
+    },
+    {
+      "path": "lib/yuktiforge/docint/publish/verify.py",
+      "sha256": "c2837ea1400c2e221411a9bf02e1197f483ae093f7cbb8757ab56de1f1c267be",
+      "size": 5943
+    },
+    {
+      "path": "lib/yuktiforge/docint/query.py",
+      "sha256": "ffaf68e606f0df3b385d93b8fb20f5bf72d775e60c2c0fb9576f35e2d20eaac9",
+      "size": 3906
+    },
+    {
+      "path": "lib/yuktiforge/docint/safety.py",
+      "sha256": "c05429e42fad62990d312c25c233871591cd0e9fe230180b734fbad0e86d56bb",
+      "size": 10643
+    },
+    {
+      "path": "lib/yuktiforge/docint/scan.py",
+      "sha256": "f153074d34182c2622e32dca84b3751fb323a34550ec73d8f143ec5d67c7c2e5",
+      "size": 21944
+    },
+    {
+      "path": "lib/yuktiforge/docint/skillmain/__init__.py",
+      "sha256": "dbd2b717bb75878e5d65d3616a6d813b9f7d7aa3d2cfd7252339c89fa130333b",
+      "size": 325
+    },
+    {
+      "path": "lib/yuktiforge/docint/skillmain/base.py",
+      "sha256": "5d83621b26e52e05b0bac8c6d446624da5f7c3b057fe2c9cfbdff7b7ed413723",
+      "size": 4471
+    },
+    {
+      "path": "lib/yuktiforge/docint/skillmain/full.py",
+      "sha256": "a7b9862127ae69aaf8653a8d27873b3de4247505fc7422d6a28e892f089f11bf",
+      "size": 5051
+    },
+    {
+      "path": "lib/yuktiforge/docint/skillmain/tools_report.py",
+      "sha256": "072641a7d6734102d0ce54cde716061b6d0dccc671391969c77723216649fb26",
+      "size": 347
+    },
+    {
+      "path": "lib/yuktiforge/docint/skillmain/workspace.py",
+      "sha256": "a30aee8e3456183742191bd049a07e46e7ec05d937e6d1a43f9f8ad979fa0358",
+      "size": 2009
+    },
+    {
+      "path": "lib/yuktiforge/errors.py",
+      "sha256": "80fb8ba0135dff72aa7df8bc9abb5373f31712c514ffaa71f9877615eec1110b",
+      "size": 350
+    },
+    {
+      "path": "lib/yuktiforge/schemas/__init__.py",
+      "sha256": "32523e34b8afc55783f85a1f3066dcb0714e653e1ce74370423b472d4e96f2a4",
+      "size": 444
+    },
+    {
+      "path": "lib/yuktiforge/schemas/manifest.py",
+      "sha256": "a59ee3bd6b89fa6c9b3d210834deed7e0e9855900d2ec6104baaed331dc75d79",
+      "size": 4564
+    },
+    {
+      "path": "lib/yuktiforge/schemas/skillspec.py",
+      "sha256": "c94a09759dd5c2cfd58ed2c6c6427ddd98cbfade11482e5df30aa05008095014",
+      "size": 5393
+    },
+    {
+      "path": "lib/yuktiforge/security/__init__.py",
+      "sha256": "3791b1b820c32b9f65f14c1ee9093fe4121c30a73c06d0bce02f8d1562123658",
+      "size": 203
+    },
+    {
+      "path": "lib/yuktiforge/security/policy.py",
+      "sha256": "06477b4b5cb7d96adf2c9868a2296c41d5a995e3f5458eb04007d459a88188b2",
+      "size": 3904
+    },
+    {
+      "path": "lib/yuktiforge/state/__init__.py",
+      "sha256": "069f785a0aae76912e50725bcb6d95046ca9b37f5e79ba89b69628f58d4efdd8",
+      "size": 222
+    },
+    {
+      "path": "lib/yuktiforge/state/machine.py",
+      "sha256": "c4f533a16f3a756d81f7a9b289363e1f072e3029402b1e8e3b435ad7f568c797",
+      "size": 2586
+    },
+    {
+      "path": "lib/yuktiforge/store/__init__.py",
+      "sha256": "eb6f54f630e91bf061f4a35b216d5c8b5750b4b6a8705c7012f983563d3f9e35",
+      "size": 135
+    },
+    {
+      "path": "lib/yuktiforge/store/artifacts.py",
+      "sha256": "242969f2feec287ac3a4496962f5be854b633c6e2738daa8862df545f4e4e8a6",
+      "size": 2033
+    },
+    {
+      "path": "lib/yuktiforge/store/db.py",
+      "sha256": "adb8c95d0fac91dfbd4679fc46544b24497c685597410f3490bcfc176e20cd8f",
+      "size": 7907
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/__init__.py",
+      "sha256": "643e70ab831e8c80ada5a9b34dc57d994718a949d97999d94c5cf45d128dca82",
+      "size": 244
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/analyzers/__init__.py",
+      "sha256": "4efcc3f5735c6315be91b944d28dd26b11f02bf2c133d729ad464ef00c2101a3",
+      "size": 3738
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/analyzers/base.py",
+      "sha256": "4cc992fc8b47f93b833cef53ef2f1de36e01f9e91dd8516e034d8e82a6d8dc84",
+      "size": 2251
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/analyzers/languages.py",
+      "sha256": "569ccc5df0b19c090971fd8e1ed9d6dbf6498682a4341629ca295db86b0b0cad",
+      "size": 1309
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/analyzers/manifests.py",
+      "sha256": "03e960d16e7cf75b60b8e87e9fe1e84d602fa629c512021c6c97da3f1f82a7bf",
+      "size": 8125
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/analyzers/python_imports.py",
+      "sha256": "de64330177c17b718424bd8b52101777a48e603265abcb29062d6c92bd61fce2",
+      "size": 6634
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/analyzers/scan.py",
+      "sha256": "7960cae4d5418ff015024f0065164a692e068acaa5876301309aef9abc152d05",
+      "size": 1243
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/dotgen.py",
+      "sha256": "628de058a954d88f6c2b84c1cc1d220fd681f86ff32dd8ec5e57ea5457e0eb7f",
+      "size": 21806
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/model.py",
+      "sha256": "e38781b8f9d726c0ff73f9eb5924a0a8d7707f16a1c682520422caa13d564bff",
+      "size": 8509
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/pipeline.py",
+      "sha256": "cfbb719a05282da8a3ef2208e8625e9c8c265387109b18f83ec103a47a7d76fb",
+      "size": 14018
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/runner.py",
+      "sha256": "b0f559527561facf037c03194b6c9548206ad073f0648dc5c89ad3cf22267925",
+      "size": 2537
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/svgcheck.py",
+      "sha256": "82550e2e442495993d8e5f58a91239dfb3f5d3639528661a99adec6eb2808bf1",
+      "size": 17556
+    },
+    {
+      "path": "lib/yuktiforge/visualizer/validate.py",
+      "sha256": "53661e8e4fa8ed9e8f2a1b6b06f10a0452344f3612dfcc51c1d3dd6c5ae3fd26",
+      "size": 4474
+    },
+    {
+      "path": "references/evidence-labels.md",
+      "sha256": "7f8239adc2c4517e22f882ee2d9d85f27bee867eb5e2837d16297589736e94ef",
+      "size": 844
+    },
+    {
+      "path": "references/workspace-layout.md",
+      "sha256": "932318dd9888901c108b548334229eee22befcf19c9aadf5d5dc59ba610f749a",
+      "size": 1033
+    },
+    {
+      "path": "requirements.lock",
+      "sha256": "e1e6731ef7580f3f8ed48b33e2c7850855fdac6597518223135f225e9c9fe6ad",
+      "size": 227
+    },
+    {
+      "path": "scripts/bootstrap.py",
+      "sha256": "266ea1e5eb0b4424b68baf1b64f60e66cd7f75b93d47d23672ad9dab852bffe8",
+      "size": 1260
+    },
+    {
+      "path": "scripts/yuktiforge_docs.py",
+      "sha256": "9bce47e2aa72d5cae87d7a1f5a196add7ea1709cb4b782de49242b5e5b5177dd",
+      "size": 1380
+    },
+    {
+      "path": "skillspec.yaml",
+      "sha256": "89f40c122c3ef62cd4e2676b8a7cae696dfd09d6c3bacab240ce348b7a7051cf",
+      "size": 1275
+    },
+    {
+      "path": "tests/smoke.py",
+      "sha256": "afe6f54bae24b9f64cd84251a42e0c0697e5a184c9aa4e1084d64630db50c7ce",
+      "size": 5497
+    },
+    {
+      "path": "yuktiforge.provenance.json",
+      "sha256": "1b86549308fb89176f55a19364bfd19963f48358f9a40f60fe83a683abb1993a",
+      "size": 603
+    }
+  ],
+  "license": "Apache-2.0"
+}

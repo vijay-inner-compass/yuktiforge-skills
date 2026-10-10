@@ -1,0 +1,46 @@
+schema_version: '1.0'
+skill_id: data-documenter
+version: 0.1.0
+description: 'Documents the data a system uses: a data dictionary and database document of tables, columns,
+  keys and queries found in code, SQL and ORM models, plus an entity-relationship diagram when column
+  definitions exist. Use when the user asks what data a system stores, for a data dictionary, or for an
+  ERD. Tables known only from queries are listed with columns marked UNKNOWN; no schema is invented.'
+inputs:
+- kind: repository
+  languages: []
+  description: ''
+outputs:
+- kind: data-dictionary
+  format: markdown
+- kind: database-doc
+  format: markdown
+- kind: erd
+  format: svg
+analyzers: []
+permissions:
+  network: false
+  secrets: []
+  commands:
+  - python3
+  - dot
+  - pandoc
+  - node
+  - git
+  filesystem_write:
+  - docs
+dependencies:
+- name: pydantic
+  version_spec: ==2.14.0
+  reason: model validation
+- name: pyyaml
+  version_spec: ==6.0.3
+  reason: reading YAML files
+targets:
+- claude-code
+- github-copilot
+- codex
+- antigravity
+assumptions: []
+workflow: []
+examples: []
+requirement: ''

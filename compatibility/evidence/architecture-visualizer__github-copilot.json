@@ -1,0 +1,59 @@
+{
+  "agent": "github-copilot",
+  "agent_cost_usd": null,
+  "agent_detected": {
+    "agent": "github-copilot",
+    "found": true,
+    "note": "",
+    "version": "GitHub Copilot CLI 1.0.95.",
+    "where": "/opt/homebrew/bin/copilot"
+  },
+  "agent_run_seconds": 13.2,
+  "agent_transcript_sha256": "fe6ef602e0a971b636c6f93db7eb30e3d884f6c147ded1b467a8252c14ca894a",
+  "format": "yuktiforge-compat-evidence/1",
+  "notes": [
+    "bootstrap.py created the private environment from requirements.lock"
+  ],
+  "package_content_sha256": "da59b6cfa7c52297afa3c74195899001fc55958efbd9772cc43c9a2534059b97",
+  "skill_id": "architecture-visualizer",
+  "skill_version": "0.3.0",
+  "tested_on": {
+    "platform": "Darwin arm64",
+    "python": "3.12.14"
+  },
+  "tests": {
+    "agent_discovery": {
+      "detail": "the agent loaded the skill (own event evidence)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "agent_invocation": {
+      "detail": "the agent ran the skill's script from the installed folder and its output is correct",
+      "facts": {
+        "answer": "pass",
+        "command": "ls; python3 .github/skills/architecture-visualizer/scripts/yuktiforge_viz.py build --model clinic.model.yaml --view layered --out docs/architecture 2>&1 | tail -20; python3 -c \"import json;print(json.load(open('docs/architecture/validation.json'))['result'])\""
+      },
+      "status": "PASS"
+    },
+    "clean_install": {
+      "detail": "installed into a clean project and verified (41 files)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "detail": "uninstall, rollback, uninstall, re-install and verify all succeeded",
+      "facts": {},
+      "status": "PASS"
+    },
+    "package_valid": {
+      "detail": "manifest hashes verified",
+      "facts": {},
+      "status": "PASS"
+    },
+    "script_execution": {
+      "detail": "the installed entry point ran and produced the expected output",
+      "facts": {},
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "agent": "claude-code",
+  "agent_cost_usd": 0.032204399999999994,
+  "agent_detected": {
+    "agent": "claude-code",
+    "found": true,
+    "note": "",
+    "version": "2.1.284 (Claude Code)",
+    "where": "/opt/homebrew/bin/claude"
+  },
+  "agent_run_seconds": 15.8,
+  "agent_transcript_sha256": "91b1bbe9eba20fce3a82a517731f9a619e67b43c7677d8b38bb3caca14a3a3f2",
+  "format": "yuktiforge-compat-evidence/1",
+  "notes": [
+    "bootstrap.py created the private environment from requirements.lock"
+  ],
+  "package_content_sha256": "338d89723e6d309a220859c256ba44a5178d3aaf90db75ef622fe56362ac34c3",
+  "skill_id": "repository-intelligence",
+  "skill_version": "0.1.0",
+  "tested_on": {
+    "platform": "Darwin arm64",
+    "python": "3.12.14"
+  },
+  "tests": {
+    "agent_discovery": {
+      "detail": "the agent loaded the skill (own event evidence)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "agent_invocation": {
+      "detail": "the agent ran the skill's script from the installed folder and its output is correct",
+      "facts": {
+        "answer": "3",
+        "command": "python3 .claude/skills/repository-intelligence/scripts/yuktiforge_docs.py scan --repo shop --out docs/scan"
+      },
+      "status": "PASS"
+    },
+    "clean_install": {
+      "detail": "installed into a clean project and verified (53 files)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "detail": "uninstall, rollback, uninstall, re-install and verify all succeeded",
+      "facts": {},
+      "status": "PASS"
+    },
+    "package_valid": {
+      "detail": "manifest hashes verified",
+      "facts": {},
+      "status": "PASS"
+    },
+    "script_execution": {
+      "detail": "the installed entry point ran and produced the expected output",
+      "facts": {},
+      "status": "PASS"
+    }
+  }
+}

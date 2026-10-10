@@ -1,0 +1,7 @@
+# Exact versions this skill was tested with (no hashes: the index was not queried; see INSTALL.md).
+annotated-types==0.8.0
+pydantic==2.14.0
+pydantic-core==2.50.0
+pyyaml==6.0.3
+typing-extensions==4.16.0
+typing-inspection==0.4.4

@@ -1,0 +1,14 @@
+{
+  "builder": "docint-standalone",
+  "built_by": "yuktiforge 0.5.0",
+  "content_sha256": "806e5551e113a1ac3fc84c76329dd378cd24915ef49d689fca53e070ed726f54",
+  "file_count": 124,
+  "format": "yuktiforge-provenance/1",
+  "reproducible_build": "same source revision + same tool version + same SOURCE_DATE_EPOCH give byte-identical zips",
+  "skill_id": "data-documenter",
+  "skill_version": "0.1.0",
+  "source": "src/yuktiforge/skills/data_documenter",
+  "source_date_epoch": 1791612735,
+  "source_revision": "2ce10624d5dba675a7210178711075f6b0ebdd31",
+  "source_tree_dirty": false
+}

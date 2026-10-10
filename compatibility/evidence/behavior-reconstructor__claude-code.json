@@ -1,0 +1,59 @@
+{
+  "agent": "claude-code",
+  "agent_cost_usd": 0.03714100000000001,
+  "agent_detected": {
+    "agent": "claude-code",
+    "found": true,
+    "note": "",
+    "version": "2.1.284 (Claude Code)",
+    "where": "/opt/homebrew/bin/claude"
+  },
+  "agent_run_seconds": 15.0,
+  "agent_transcript_sha256": "a16cd8ac90d855cf509689c13be96f999662b718f8d9aa30967888ddf87d2b26",
+  "format": "yuktiforge-compat-evidence/1",
+  "notes": [
+    "bootstrap.py created the private environment from requirements.lock"
+  ],
+  "package_content_sha256": "0ee16ec0d5143c7629ea0f3d2c5e219717215b7ec332bbb673053a89ff2b0ee9",
+  "skill_id": "behavior-reconstructor",
+  "skill_version": "0.1.0",
+  "tested_on": {
+    "platform": "Darwin arm64",
+    "python": "3.12.14"
+  },
+  "tests": {
+    "agent_discovery": {
+      "detail": "the agent loaded the skill (own event evidence)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "agent_invocation": {
+      "detail": "the agent ran the skill's script from the installed folder and its output is correct",
+      "facts": {
+        "answer": "**POST /orders**",
+        "command": "python3 .claude/skills/behavior-reconstructor/scripts/yuktiforge_docs.py doctor"
+      },
+      "status": "PASS"
+    },
+    "clean_install": {
+      "detail": "installed into a clean project and verified (92 files)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "detail": "uninstall, rollback, uninstall, re-install and verify all succeeded",
+      "facts": {},
+      "status": "PASS"
+    },
+    "package_valid": {
+      "detail": "manifest hashes verified",
+      "facts": {},
+      "status": "PASS"
+    },
+    "script_execution": {
+      "detail": "the installed entry point ran and produced the expected output",
+      "facts": {},
+      "status": "PASS"
+    }
+  }
+}

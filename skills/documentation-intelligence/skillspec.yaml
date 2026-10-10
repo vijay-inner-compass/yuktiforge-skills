@@ -1,0 +1,53 @@
+schema_version: '1.0'
+skill_id: documentation-intelligence
+version: 0.1.0
+description: 'Orchestrates the whole documentation workflow for an existing codebase: scan, evidence-backed
+  knowledge model, documents (architecture, API, data, behaviour, requirements candidates, operations),
+  diagrams, a published HTML/DOCX/PDF pack, a quality audit and change-driven updates. Use when the user
+  wants complete documentation or a knowledge-transfer pack, or is unsure which documentation step they
+  need. Reconstructions are labelled and never presented as approved requirements.'
+inputs:
+- kind: repository
+  languages: []
+  description: ''
+outputs:
+- kind: scan
+  format: json
+- kind: knowledge-model
+  format: json
+- kind: documents
+  format: markdown
+- kind: diagram-set
+  format: svg
+- kind: publish-pack
+  format: html
+- kind: evaluation
+  format: json
+analyzers: []
+permissions:
+  network: false
+  secrets: []
+  commands:
+  - python3
+  - dot
+  - pandoc
+  - node
+  - git
+  filesystem_write:
+  - docs
+dependencies:
+- name: pydantic
+  version_spec: ==2.14.0
+  reason: model validation
+- name: pyyaml
+  version_spec: ==6.0.3
+  reason: reading YAML files
+targets:
+- claude-code
+- github-copilot
+- codex
+- antigravity
+assumptions: []
+workflow: []
+examples: []
+requirement: ''

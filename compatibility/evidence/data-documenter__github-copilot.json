@@ -1,0 +1,56 @@
+{
+  "agent": "github-copilot",
+  "agent_cost_usd": null,
+  "agent_detected": {
+    "agent": "github-copilot",
+    "found": true,
+    "note": "",
+    "version": "GitHub Copilot CLI 1.0.95.",
+    "where": "/opt/homebrew/bin/copilot"
+  },
+  "agent_run_seconds": null,
+  "agent_transcript_sha256": null,
+  "format": "yuktiforge-compat-evidence/1",
+  "notes": [
+    "bootstrap.py created the private environment from requirements.lock"
+  ],
+  "package_content_sha256": "de26f4583dd43c77762357e0d1c045563932f1f58786b5069c8f91cc5eba8fb8",
+  "skill_id": "data-documenter",
+  "skill_version": "0.1.0",
+  "tested_on": {
+    "platform": "Darwin arm64",
+    "python": "3.12.14"
+  },
+  "tests": {
+    "agent_discovery": {
+      "detail": "agent runs were not requested (add --run-agents)",
+      "facts": {},
+      "status": "NOT_TESTED"
+    },
+    "agent_invocation": {
+      "detail": "agent runs were not requested (add --run-agents)",
+      "facts": {},
+      "status": "NOT_TESTED"
+    },
+    "clean_install": {
+      "detail": "installed into a clean project and verified (126 files)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "detail": "uninstall, rollback, uninstall, re-install and verify all succeeded",
+      "facts": {},
+      "status": "PASS"
+    },
+    "package_valid": {
+      "detail": "manifest hashes verified",
+      "facts": {},
+      "status": "PASS"
+    },
+    "script_execution": {
+      "detail": "the installed entry point ran and produced the expected output",
+      "facts": {},
+      "status": "PASS"
+    }
+  }
+}

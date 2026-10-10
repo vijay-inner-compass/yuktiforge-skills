@@ -1,0 +1,116 @@
+{
+  "manifest_version": "1.1",
+  "skill_id": "api-contract-reviewer",
+  "skill_version": "0.1.0",
+  "spec_sha256": "e25f72354d892cf2d65b45a4e5798d88cded7577577f3724cf9f7f2902c4d7d9",
+  "targets": [
+    "claude-code",
+    "github-copilot",
+    "codex",
+    "antigravity"
+  ],
+  "created_at": "2026-10-10T06:12:15Z",
+  "files": [
+    {
+      "path": "INSTALL.md",
+      "sha256": "87208c71a6d38203272a78196db1d07772c1de5781124d5f89c59a5cddfb343b",
+      "size": 1240
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "size": 10174
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "3dfcce5ff2b64da221ff8f93e668e5c326445058ac813a290f227f655339026e",
+      "size": 2434
+    },
+    {
+      "path": "examples/clean-api/expect.json",
+      "sha256": "0f06215155a63de157e03bf180a98469bbcca72bfa055c4433a617282deb6901",
+      "size": 145
+    },
+    {
+      "path": "examples/clean-api/input.txt",
+      "sha256": "4ff573c85076cca4dbcd0b3e7d579b3c0ed9ea8857a211f7675778468e079cf8",
+      "size": 229
+    },
+    {
+      "path": "examples/defective-api/expect.json",
+      "sha256": "266e7ebc816be0bc1c35a7043aea4ba85cb4454745cf76910674f17503dd6301",
+      "size": 350
+    },
+    {
+      "path": "examples/defective-api/input.txt",
+      "sha256": "1f6801c552208651a9d6b539eee0be17b3d50563bb287df330baef506f9fcda2",
+      "size": 256
+    },
+    {
+      "path": "examples/not-json/expect.json",
+      "sha256": "c00638c2e4dfb5a1df620da3f6ff5dc00d1942da01dc962ce4cb242b1fff6e8f",
+      "size": 89
+    },
+    {
+      "path": "examples/not-json/input.txt",
+      "sha256": "e7e879072e65ad01a4d339d1a1b266c31acd0b530ec8eee218f2a829c50dc0d7",
+      "size": 19
+    },
+    {
+      "path": "examples/path-format/expect.json",
+      "sha256": "a2ac234858721ba4a7426eafa13628b7076e1a5a909fc180a349ba6f07332cf9",
+      "size": 256
+    },
+    {
+      "path": "examples/path-format/input.txt",
+      "sha256": "0094e5cd5d3b7186253d82ef10b1ed6c4c5f240f1f34dd94f6b6531ff9fe4612",
+      "size": 190
+    },
+    {
+      "path": "references/behavior.md",
+      "sha256": "2ff37c03650141e0605cf4b408aa75b39182b6a4fefec0f52d530a6438434242",
+      "size": 722
+    },
+    {
+      "path": "schemas/output.schema.json",
+      "sha256": "ae11a2dd0fef5ebb2df72dcdd9796d20e24b4e145199cf77f4cead6b591c5f8f",
+      "size": 503
+    },
+    {
+      "path": "scripts/api_contract_reviewer.py",
+      "sha256": "dcf3660551410f03414e49190579b0038e615a2f5135ac55a50443a3c240f6b6",
+      "size": 1758
+    },
+    {
+      "path": "scripts/skill_logic.py",
+      "sha256": "d9e5029f0aa5dc2d6bdfa1e8d39cc089b2042d3d925cd9583f195d2ccd3b70fe",
+      "size": 4061
+    },
+    {
+      "path": "skillspec.yaml",
+      "sha256": "e25f72354d892cf2d65b45a4e5798d88cded7577577f3724cf9f7f2902c4d7d9",
+      "size": 3353
+    },
+    {
+      "path": "tests/_assertions.py",
+      "sha256": "04a712f49f984d509c82a3b6d141fc060fb80049110829e807ff9c843f177c18",
+      "size": 2948
+    },
+    {
+      "path": "tests/test_examples.py",
+      "sha256": "c9526447d2b8b3d1f55bed751faa7491e0dfedaf235b8d217ddcc31719b9e368",
+      "size": 1296
+    },
+    {
+      "path": "tests/test_skill_logic.py",
+      "sha256": "3ae05c15d9afd3af1bb72f0b4c93011c1b921ac448dffaf17333668797dbf15e",
+      "size": 5293
+    },
+    {
+      "path": "yuktiforge.provenance.json",
+      "sha256": "a74550840408cd1f81c4b6588e84c53b9457153f1d32e211e0cf93022faf76bf",
+      "size": 586
+    }
+  ],
+  "license": "Apache-2.0"
+}

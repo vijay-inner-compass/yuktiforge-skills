@@ -1,0 +1,59 @@
+{
+  "agent": "claude-code",
+  "agent_cost_usd": 0.054438099999999996,
+  "agent_detected": {
+    "agent": "claude-code",
+    "found": true,
+    "note": "",
+    "version": "2.1.284 (Claude Code)",
+    "where": "/opt/homebrew/bin/claude"
+  },
+  "agent_run_seconds": 24.3,
+  "agent_transcript_sha256": "4e710a8644ac35c8da7363858039c3fb6accd6d1bdd765e470f39588e887bc00",
+  "format": "yuktiforge-compat-evidence/1",
+  "notes": [
+    "bootstrap.py created the private environment from requirements.lock"
+  ],
+  "package_content_sha256": "32d2467c17665d10e6d1dbf781bb5ff2e9d1f9e2676050bcec0ad83086f8e46a",
+  "skill_id": "architecture-visualizer",
+  "skill_version": "0.3.0",
+  "tested_on": {
+    "platform": "Darwin arm64",
+    "python": "3.12.14"
+  },
+  "tests": {
+    "agent_discovery": {
+      "detail": "the agent loaded the skill (own event evidence)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "agent_invocation": {
+      "detail": "the agent ran the skill's script from the installed folder and its output is correct",
+      "facts": {
+        "answer": "pass",
+        "command": "python3 .claude/skills/architecture-visualizer/scripts/yuktiforge_viz.py doctor"
+      },
+      "status": "PASS"
+    },
+    "clean_install": {
+      "detail": "installed into a clean project and verified (41 files)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "detail": "uninstall, rollback, uninstall, re-install and verify all succeeded",
+      "facts": {},
+      "status": "PASS"
+    },
+    "package_valid": {
+      "detail": "manifest hashes verified",
+      "facts": {},
+      "status": "PASS"
+    },
+    "script_execution": {
+      "detail": "the installed entry point ran and produced the expected output",
+      "facts": {},
+      "status": "PASS"
+    }
+  }
+}

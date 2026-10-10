@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "issue_count": {
+      "description": "The total number of contract problems found in the document.",
+      "type": "integer"
+    },
+    "issues": {
+      "description": "A list of detected contract problems, each containing the rule, path, and message.",
+      "type": "array"
+    }
+  },
+  "required": [
+    "issue_count",
+    "issues"
+  ],
+  "title": "skill output",
+  "type": "object"
+}

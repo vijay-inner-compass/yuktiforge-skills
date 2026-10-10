@@ -1,0 +1,469 @@
+{
+  "$defs": {
+    "AnalyzerCoverage": {
+      "additionalProperties": false,
+      "properties": {
+        "analyzer_id": {
+          "title": "Analyzer Id",
+          "type": "string"
+        },
+        "files_examined": {
+          "default": 0,
+          "title": "Files Examined",
+          "type": "integer"
+        },
+        "languages": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Languages",
+          "type": "array"
+        },
+        "limitations": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "ran",
+            "not-applicable"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "analyzer_id",
+        "status",
+        "languages"
+      ],
+      "title": "AnalyzerCoverage",
+      "type": "object"
+    },
+    "Boundary": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "default": "",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "default": "other",
+          "enum": [
+            "system",
+            "trust",
+            "deployment",
+            "team",
+            "other"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "name": {
+          "default": "",
+          "title": "Name",
+          "type": "string"
+        },
+        "parent": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parent"
+        }
+      },
+      "title": "Boundary",
+      "type": "object"
+    },
+    "Component": {
+      "additionalProperties": false,
+      "properties": {
+        "attributes": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Attributes",
+          "type": "array"
+        },
+        "boundary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Boundary"
+        },
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "evidence": {
+          "$ref": "#/$defs/Evidence",
+          "default": {
+            "confidence": null,
+            "rationale": "",
+            "sources": [],
+            "status": "user-supplied"
+          }
+        },
+        "id": {
+          "default": "",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "default": "component",
+          "enum": [
+            "person",
+            "system",
+            "external-system",
+            "container",
+            "service",
+            "component",
+            "datastore",
+            "queue",
+            "infrastructure",
+            "module",
+            "package",
+            "library",
+            "entity"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "layer": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Layer"
+        },
+        "name": {
+          "default": "",
+          "title": "Name",
+          "type": "string"
+        },
+        "technology": {
+          "default": "",
+          "title": "Technology",
+          "type": "string"
+        }
+      },
+      "title": "Component",
+      "type": "object"
+    },
+    "Coverage": {
+      "additionalProperties": false,
+      "properties": {
+        "analyzers": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/AnalyzerCoverage"
+          },
+          "title": "Analyzers",
+          "type": "array"
+        },
+        "languages": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/LanguageCoverage"
+          },
+          "title": "Languages",
+          "type": "array"
+        },
+        "notes": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        },
+        "unparsed_files": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Unparsed Files",
+          "type": "array"
+        }
+      },
+      "title": "Coverage",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        },
+        "rationale": {
+          "default": "",
+          "title": "Rationale",
+          "type": "string"
+        },
+        "sources": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Provenance"
+          },
+          "title": "Sources",
+          "type": "array"
+        },
+        "status": {
+          "default": "user-supplied",
+          "enum": [
+            "verified",
+            "user-supplied",
+            "inferred"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "title": "Evidence",
+      "type": "object"
+    },
+    "LanguageCoverage": {
+      "additionalProperties": false,
+      "properties": {
+        "analyzers": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Analyzers",
+          "type": "array"
+        },
+        "depth": {
+          "default": "none",
+          "enum": [
+            "none",
+            "manifest",
+            "imports"
+          ],
+          "title": "Depth",
+          "type": "string"
+        },
+        "files": {
+          "minimum": 0,
+          "title": "Files",
+          "type": "integer"
+        },
+        "language": {
+          "title": "Language",
+          "type": "string"
+        }
+      },
+      "required": [
+        "language",
+        "files"
+      ],
+      "title": "LanguageCoverage",
+      "type": "object"
+    },
+    "Layer": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "default": "",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "default": "",
+          "title": "Name",
+          "type": "string"
+        },
+        "order": {
+          "default": 0,
+          "title": "Order",
+          "type": "integer"
+        }
+      },
+      "title": "Layer",
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "detail": {
+          "default": "",
+          "title": "Detail",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "file",
+            "analyzer",
+            "user",
+            "document"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "ref": {
+          "minLength": 1,
+          "title": "Ref",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "ref"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    },
+    "Relation": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "$ref": "#/$defs/Evidence",
+          "default": {
+            "confidence": null,
+            "rationale": "",
+            "sources": [],
+            "status": "user-supplied"
+          }
+        },
+        "id": {
+          "default": "",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "default": "uses",
+          "enum": [
+            "uses",
+            "calls",
+            "reads-writes",
+            "publishes",
+            "subscribes",
+            "depends-on",
+            "data-flow",
+            "deploys-to",
+            "other"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "label": {
+          "default": "",
+          "title": "Label",
+          "type": "string"
+        },
+        "source": {
+          "default": "",
+          "title": "Source",
+          "type": "string"
+        },
+        "target": {
+          "default": "",
+          "title": "Target",
+          "type": "string"
+        },
+        "technology": {
+          "default": "",
+          "title": "Technology",
+          "type": "string"
+        }
+      },
+      "title": "Relation",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "boundaries": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Boundary"
+      },
+      "title": "Boundaries",
+      "type": "array"
+    },
+    "components": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Component"
+      },
+      "title": "Components",
+      "type": "array"
+    },
+    "coverage": {
+      "$ref": "#/$defs/Coverage",
+      "default": {
+        "analyzers": [],
+        "languages": [],
+        "notes": [],
+        "unparsed_files": []
+      }
+    },
+    "description": {
+      "default": "",
+      "title": "Description",
+      "type": "string"
+    },
+    "layers": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Layer"
+      },
+      "title": "Layers",
+      "type": "array"
+    },
+    "model_version": {
+      "default": "1.0",
+      "title": "Model Version",
+      "type": "string"
+    },
+    "name": {
+      "default": "",
+      "title": "Name",
+      "type": "string"
+    },
+    "relations": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Relation"
+      },
+      "title": "Relations",
+      "type": "array"
+    }
+  },
+  "title": "ArchitectureModel",
+  "type": "object"
+}

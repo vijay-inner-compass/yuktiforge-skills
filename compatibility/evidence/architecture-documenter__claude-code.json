@@ -1,0 +1,59 @@
+{
+  "agent": "claude-code",
+  "agent_cost_usd": 0.0428558,
+  "agent_detected": {
+    "agent": "claude-code",
+    "found": true,
+    "note": "",
+    "version": "2.1.284 (Claude Code)",
+    "where": "/opt/homebrew/bin/claude"
+  },
+  "agent_run_seconds": 38.1,
+  "agent_transcript_sha256": "d464d419a4c3c75f844b38d48a721575f78f1babe9cd286693302171733d3707",
+  "format": "yuktiforge-compat-evidence/1",
+  "notes": [
+    "bootstrap.py created the private environment from requirements.lock"
+  ],
+  "package_content_sha256": "8efc44412237df740ed5d912519f9694448626578020bb2db437e4469aaf8e9c",
+  "skill_id": "architecture-documenter",
+  "skill_version": "0.1.0",
+  "tested_on": {
+    "platform": "Darwin arm64",
+    "python": "3.12.14"
+  },
+  "tests": {
+    "agent_discovery": {
+      "detail": "the agent loaded the skill (own event evidence)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "agent_invocation": {
+      "detail": "the agent ran the skill's script from the installed folder and its output is correct",
+      "facts": {
+        "answer": "8",
+        "command": "python3 .claude/skills/architecture-documenter/scripts/yuktiforge_docs.py doctor"
+      },
+      "status": "PASS"
+    },
+    "clean_install": {
+      "detail": "installed into a clean project and verified (126 files)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "detail": "uninstall, rollback, uninstall, re-install and verify all succeeded",
+      "facts": {},
+      "status": "PASS"
+    },
+    "package_valid": {
+      "detail": "manifest hashes verified",
+      "facts": {},
+      "status": "PASS"
+    },
+    "script_execution": {
+      "detail": "the installed entry point ran and produced the expected output",
+      "facts": {},
+      "status": "PASS"
+    }
+  }
+}

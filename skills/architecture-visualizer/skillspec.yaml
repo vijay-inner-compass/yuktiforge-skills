@@ -1,0 +1,70 @@
+schema_version: '1.0'
+skill_id: architecture-visualizer
+version: 0.3.0
+description: Produce architecture diagrams (layered, C4 context, C4 container) from natural-language descriptions,
+  structured YAML/JSON, documentation or source repositories in any language, with evidence status for
+  every element and explicit coverage of what could not be analyzed.
+inputs:
+- kind: repository
+  languages: []
+  description: ''
+- kind: specification
+  languages: []
+  description: ''
+outputs:
+- kind: architecture-model
+  format: json
+- kind: diagram-source
+  format: graphviz-dot
+- kind: diagram
+  format: svg
+- kind: diagram
+  format: png
+- kind: diagram
+  format: pdf
+- kind: preview
+  format: html
+- kind: validation-report
+  format: json
+analyzers:
+- id: manifest-dependencies
+  optional: true
+  languages:
+  - javascript
+  - typescript
+  - python
+  - java
+  - go
+  - rust
+  coverage_notes: Reads package manifests only; links in-repo packages. No source code is inspected.
+- id: python-imports
+  optional: true
+  languages:
+  - python
+  coverage_notes: Static import graph at module granularity; dynamic imports and framework wiring are
+    not seen.
+permissions:
+  network: false
+  secrets: []
+  commands:
+  - python3
+  - dot
+  - rsvg-convert
+  filesystem_write:
+  - docs/architecture
+dependencies:
+- name: pydantic
+  version_spec: ==2.14.0
+  reason: model validation
+- name: pyyaml
+  version_spec: ==6.0.3
+  reason: reading YAML models
+targets:
+- claude-code
+- github-copilot
+- codex
+- antigravity
+assumptions: []
+workflow: []
+examples: []
+requirement: ''

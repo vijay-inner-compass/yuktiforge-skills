@@ -1,0 +1,56 @@
+{
+  "agent": "codex",
+  "agent_cost_usd": null,
+  "agent_detected": {
+    "agent": "codex",
+    "found": true,
+    "note": "",
+    "version": "codex-cli 0.159.0",
+    "where": "/opt/homebrew/bin/codex"
+  },
+  "agent_run_seconds": null,
+  "agent_transcript_sha256": null,
+  "format": "yuktiforge-compat-evidence/1",
+  "notes": [
+    "bootstrap.py created the private environment from requirements.lock"
+  ],
+  "package_content_sha256": "b9061ada414147625093e92045bae01a64f8ae75252668f0a535021d4729585e",
+  "skill_id": "data-documenter",
+  "skill_version": "0.1.0",
+  "tested_on": {
+    "platform": "Darwin arm64",
+    "python": "3.12.14"
+  },
+  "tests": {
+    "agent_discovery": {
+      "detail": "agent runs were not requested (add --run-agents)",
+      "facts": {},
+      "status": "NOT_TESTED"
+    },
+    "agent_invocation": {
+      "detail": "agent runs were not requested (add --run-agents)",
+      "facts": {},
+      "status": "NOT_TESTED"
+    },
+    "clean_install": {
+      "detail": "installed into a clean project and verified (126 files)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "detail": "uninstall, rollback, uninstall, re-install and verify all succeeded",
+      "facts": {},
+      "status": "PASS"
+    },
+    "package_valid": {
+      "detail": "manifest hashes verified",
+      "facts": {},
+      "status": "PASS"
+    },
+    "script_execution": {
+      "detail": "the installed entry point ran and produced the expected output",
+      "facts": {},
+      "status": "PASS"
+    }
+  }
+}

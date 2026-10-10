@@ -1,0 +1,17 @@
+# Written by following SKILL.md for this natural-language description (a manual walkthrough, NOT an agent run):
+#   "Our clinic booking system has a Patient Portal (a web app) that talks to a Booking API over HTTPS. The Booking
+#    API stores appointments in a PostgreSQL database and sends reminder requests to an external SMS Gateway.
+#    Staff use an Admin Console that also calls the Booking API."
+# Only stated facts are modelled. No layers were stated, so none are invented (components land in "Unassigned").
+name: Clinic Booking System
+components:
+  - { id: patient-portal, name: Patient Portal, kind: container, technology: Web app, evidence: { sources: [{ kind: user, ref: user description }] } }
+  - { id: admin-console, name: Admin Console, kind: container, evidence: { sources: [{ kind: user, ref: user description }] } }
+  - { id: booking-api, name: Booking API, kind: service, evidence: { sources: [{ kind: user, ref: user description }] } }
+  - { id: appointments-db, name: PostgreSQL, kind: datastore, technology: PostgreSQL, evidence: { sources: [{ kind: user, ref: user description }] } }
+  - { id: sms-gateway, name: SMS Gateway, kind: external-system, evidence: { sources: [{ kind: user, ref: user description }] } }
+relations:
+  - { id: r1, source: patient-portal, target: booking-api, label: Calls, kind: calls, technology: HTTPS }
+  - { id: r2, source: admin-console, target: booking-api, label: Calls, kind: calls }
+  - { id: r3, source: booking-api, target: appointments-db, label: Stores appointments, kind: reads-writes }
+  - { id: r4, source: booking-api, target: sms-gateway, label: Sends reminder requests, kind: calls }

@@ -1,0 +1,57 @@
+{
+  "agent": "claude-code",
+  "agent_cost_usd": 0.027246700000000002,
+  "agent_detected": {
+    "agent": "claude-code",
+    "found": true,
+    "note": "",
+    "version": "2.1.284 (Claude Code)",
+    "where": "/opt/homebrew/bin/claude"
+  },
+  "agent_run_seconds": 9.9,
+  "agent_transcript_sha256": "464632de021b48a6e96d467aa3f05fb74ffe521f9dfb08534ef62f0afa45f4b1",
+  "format": "yuktiforge-compat-evidence/1",
+  "notes": [],
+  "package_content_sha256": "53132ca679ead4177b5bafb4729f5eb5086da29a43389c2eff0a16c400c2b2a2",
+  "skill_id": "api-contract-reviewer",
+  "skill_version": "0.1.0",
+  "tested_on": {
+    "platform": "Darwin arm64",
+    "python": "3.12.14"
+  },
+  "tests": {
+    "agent_discovery": {
+      "detail": "the agent loaded the skill (own event evidence)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "agent_invocation": {
+      "detail": "the agent ran the skill's script from the installed folder and its output is correct",
+      "facts": {
+        "answer": "6",
+        "command": "python3 .claude/skills/api-contract-reviewer/scripts/api_contract_reviewer.py api.json"
+      },
+      "status": "PASS"
+    },
+    "clean_install": {
+      "detail": "installed into a clean project and verified (21 files)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "detail": "uninstall, rollback, uninstall, re-install and verify all succeeded",
+      "facts": {},
+      "status": "PASS"
+    },
+    "package_valid": {
+      "detail": "manifest hashes verified",
+      "facts": {},
+      "status": "PASS"
+    },
+    "script_execution": {
+      "detail": "the installed entry point ran and produced the expected output",
+      "facts": {},
+      "status": "PASS"
+    }
+  }
+}

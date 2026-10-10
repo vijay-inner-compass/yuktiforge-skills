@@ -1,0 +1,14 @@
+{
+  "builder": "docint-standalone",
+  "built_by": "yuktiforge 0.5.0",
+  "content_sha256": "1a97d3cf7f2715c0b65895fd025df568205228a13bf9cf959c7919689f49b080",
+  "file_count": 124,
+  "format": "yuktiforge-provenance/1",
+  "reproducible_build": "same source revision + same tool version + same SOURCE_DATE_EPOCH give byte-identical zips",
+  "skill_id": "documentation-intelligence",
+  "skill_version": "0.1.0",
+  "source": "src/yuktiforge/skills/documentation_intelligence",
+  "source_date_epoch": 1791612735,
+  "source_revision": "2ce10624d5dba675a7210178711075f6b0ebdd31",
+  "source_tree_dirty": false
+}

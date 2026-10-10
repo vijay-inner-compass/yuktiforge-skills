@@ -1,0 +1,59 @@
+{
+  "agent": "codex",
+  "agent_cost_usd": null,
+  "agent_detected": {
+    "agent": "codex",
+    "found": true,
+    "note": "",
+    "version": "codex-cli 0.159.0",
+    "where": "/opt/homebrew/bin/codex"
+  },
+  "agent_run_seconds": 32.7,
+  "agent_transcript_sha256": "a8c17170f08fcf4044c1432a3643355baf4112615c3cea71fc620e3ff507a6a1",
+  "format": "yuktiforge-compat-evidence/1",
+  "notes": [
+    "bootstrap.py created the private environment from requirements.lock"
+  ],
+  "package_content_sha256": "31a93ff70103be1c9dffda9952784d323c9dc819dba60cb8aad0f90f8c7d99f1",
+  "skill_id": "architecture-visualizer",
+  "skill_version": "0.3.0",
+  "tested_on": {
+    "platform": "Darwin arm64",
+    "python": "3.12.14"
+  },
+  "tests": {
+    "agent_discovery": {
+      "detail": "the agent loaded the skill (own event evidence)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "agent_invocation": {
+      "detail": "the agent ran the skill's script from the installed folder and its output is correct",
+      "facts": {
+        "answer": "pass",
+        "command": "/bin/zsh -lc 'python3 .agents/skills/architecture-visualizer/scripts/yuktiforge_viz.py doctor && test -f clinic.model.yaml && echo MODEL_OK'"
+      },
+      "status": "PASS"
+    },
+    "clean_install": {
+      "detail": "installed into a clean project and verified (41 files)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "detail": "uninstall, rollback, uninstall, re-install and verify all succeeded",
+      "facts": {},
+      "status": "PASS"
+    },
+    "package_valid": {
+      "detail": "manifest hashes verified",
+      "facts": {},
+      "status": "PASS"
+    },
+    "script_execution": {
+      "detail": "the installed entry point ran and produced the expected output",
+      "facts": {},
+      "status": "PASS"
+    }
+  }
+}

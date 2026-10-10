@@ -1,0 +1,7 @@
+[
+  {
+    "path": "issues.0.rule",
+    "op": "equals",
+    "value": "invalid-json"
+  }
+]

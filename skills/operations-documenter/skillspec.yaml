@@ -1,0 +1,45 @@
+schema_version: '1.0'
+skill_id: operations-documenter
+version: 0.1.0
+description: 'Drafts an operations runbook from a repository: the configuration variables the code reads,
+  container, compose, Terraform and pipeline definitions, runtime dependencies (databases, message channels,
+  external services) and health endpoints, with a deployment diagram when infrastructure files exist.
+  Use when the user wants run, deploy or support documentation. Procedures, alerts, SLOs and production
+  topology are not in code and are listed as unknown for operators to supply.'
+inputs:
+- kind: repository
+  languages: []
+  description: ''
+outputs:
+- kind: operations-runbook
+  format: markdown
+- kind: deployment-diagram
+  format: svg
+analyzers: []
+permissions:
+  network: false
+  secrets: []
+  commands:
+  - python3
+  - dot
+  - pandoc
+  - node
+  - git
+  filesystem_write:
+  - docs
+dependencies:
+- name: pydantic
+  version_spec: ==2.14.0
+  reason: model validation
+- name: pyyaml
+  version_spec: ==6.0.3
+  reason: reading YAML files
+targets:
+- claude-code
+- github-copilot
+- codex
+- antigravity
+assumptions: []
+workflow: []
+examples: []
+requirement: ''

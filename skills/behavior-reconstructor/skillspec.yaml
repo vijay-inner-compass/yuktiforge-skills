@@ -1,0 +1,45 @@
+schema_version: '1.0'
+skill_id: behavior-reconstructor
+version: 0.1.0
+description: 'Reconstructs observable behaviour from code: request paths, workflows, conditions and validations
+  that look like business rules, and candidate use cases, each cited to file and line and labelled as
+  a reconstruction that no stakeholder has approved. Use when the user asks what a system actually does,
+  what rules the code enforces, or how a request flows through it. Does not run the code; does not claim
+  business intent.'
+inputs:
+- kind: repository
+  languages: []
+  description: ''
+outputs:
+- kind: functional-spec
+  format: markdown
+- kind: business-rule-catalog
+  format: markdown
+- kind: use-cases
+  format: markdown
+- kind: knowledge-model
+  format: json
+analyzers: []
+permissions:
+  network: false
+  secrets: []
+  commands:
+  - python3
+  filesystem_write:
+  - docs
+dependencies:
+- name: pydantic
+  version_spec: ==2.14.0
+  reason: model validation
+- name: pyyaml
+  version_spec: ==6.0.3
+  reason: reading YAML files
+targets:
+- claude-code
+- github-copilot
+- codex
+- antigravity
+assumptions: []
+workflow: []
+examples: []
+requirement: ''

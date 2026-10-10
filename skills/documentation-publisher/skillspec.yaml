@@ -1,0 +1,48 @@
+schema_version: '1.0'
+skill_id: documentation-publisher
+version: 0.1.0
+description: 'Publishes the documentation as a pack: Markdown sources, an HTML site, a DOCX and an A4
+  PDF with table of contents and diagrams, then checks links, DOCX structure and rendered PDF pages. Use
+  when the user wants documents to share or archive. A format whose tool is missing (pandoc, Chromium,
+  LibreOffice) is reported UNAVAILABLE, not faked; every export is QA-checked.'
+inputs:
+- kind: repository
+  languages: []
+  description: ''
+outputs:
+- kind: html-site
+  format: html
+- kind: docx
+  format: docx
+- kind: pdf
+  format: pdf
+- kind: pack-manifest
+  format: json
+analyzers: []
+permissions:
+  network: false
+  secrets: []
+  commands:
+  - python3
+  - dot
+  - pandoc
+  - node
+  - git
+  filesystem_write:
+  - docs
+dependencies:
+- name: pydantic
+  version_spec: ==2.14.0
+  reason: model validation
+- name: pyyaml
+  version_spec: ==6.0.3
+  reason: reading YAML files
+targets:
+- claude-code
+- github-copilot
+- codex
+- antigravity
+assumptions: []
+workflow: []
+examples: []
+requirement: ''

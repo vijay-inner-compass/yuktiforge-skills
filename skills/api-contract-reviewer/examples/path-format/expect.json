@@ -1,0 +1,17 @@
+[
+  {
+    "path": "issues.0.path",
+    "op": "equals",
+    "value": "DELETE /pets/{id}"
+  },
+  {
+    "path": "issues.0.rule",
+    "op": "equals",
+    "value": "no-error-response"
+  },
+  {
+    "path": "issue_count",
+    "op": "equals",
+    "value": 1
+  }
+]

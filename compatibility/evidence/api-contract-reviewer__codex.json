@@ -1,0 +1,57 @@
+{
+  "agent": "codex",
+  "agent_cost_usd": null,
+  "agent_detected": {
+    "agent": "codex",
+    "found": true,
+    "note": "",
+    "version": "codex-cli 0.159.0",
+    "where": "/opt/homebrew/bin/codex"
+  },
+  "agent_run_seconds": 15.8,
+  "agent_transcript_sha256": "b5b50c5dc250d60b4d8b87fbe903beb9495b8924c769ff145af56a377861937b",
+  "format": "yuktiforge-compat-evidence/1",
+  "notes": [],
+  "package_content_sha256": "d2d9c5f7bc3dbdd84da5b329ad71c023711347b4ad5ac1f14d9ffa04d6a5c5b1",
+  "skill_id": "api-contract-reviewer",
+  "skill_version": "0.1.0",
+  "tested_on": {
+    "platform": "Darwin arm64",
+    "python": "3.12.14"
+  },
+  "tests": {
+    "agent_discovery": {
+      "detail": "the agent loaded the skill (own event evidence)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "agent_invocation": {
+      "detail": "the agent ran the skill's script from the installed folder and its output is correct",
+      "facts": {
+        "answer": "6",
+        "command": "/bin/zsh -lc 'python3 .agents/skills/api-contract-reviewer/scripts/api_contract_reviewer.py api.json'"
+      },
+      "status": "PASS"
+    },
+    "clean_install": {
+      "detail": "installed into a clean project and verified (21 files)",
+      "facts": {},
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "detail": "uninstall, rollback, uninstall, re-install and verify all succeeded",
+      "facts": {},
+      "status": "PASS"
+    },
+    "package_valid": {
+      "detail": "manifest hashes verified",
+      "facts": {},
+      "status": "PASS"
+    },
+    "script_execution": {
+      "detail": "the installed entry point ran and produced the expected output",
+      "facts": {},
+      "status": "PASS"
+    }
+  }
+}

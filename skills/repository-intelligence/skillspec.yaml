@@ -1,0 +1,86 @@
+schema_version: '1.0'
+skill_id: repository-intelligence
+version: 0.1.0
+description: 'Scan a source repository of any language mix without running it: inventory, symbol and integration-boundary
+  index, dependency index and an explicit coverage report, with file and line provenance for every fact.'
+inputs:
+- kind: repository
+  languages: []
+  description: ''
+outputs:
+- kind: repository-inventory
+  format: json
+- kind: symbol-index
+  format: json
+- kind: dependency-index
+  format: json
+- kind: coverage-report
+  format: json
+analyzers:
+- id: python-ast
+  optional: true
+  languages:
+  - python
+  coverage_notes: Standard-library parser; symbols, imports, calls, routes, tables, events, environment
+    reads. Dynamic dispatch and framework wiring are not seen.
+- id: java-lexical
+  optional: true
+  languages:
+  - java
+  coverage_notes: Tokenizer-based declarations and framework patterns; no type resolution, Lombok or annotation
+    processing.
+- id: csharp-lexical
+  optional: true
+  languages:
+  - csharp
+  coverage_notes: Tokenizer-based declarations and ASP.NET/EF Core patterns; partial classes are not merged.
+- id: go-lexical
+  optional: true
+  languages:
+  - go
+  coverage_notes: Tokenizer-based declarations and net/http, gin, echo, chi, gorm patterns.
+- id: typescript-lexical
+  optional: true
+  languages:
+  - typescript
+  - javascript
+  coverage_notes: Tokenizer-based declarations and Express, NestJS, Prisma, TypeORM patterns.
+- id: manifest-parsers
+  optional: true
+  languages:
+  - manifest
+  coverage_notes: Declared dependencies only; ranges and transitive dependencies are not resolved.
+- id: structured-files
+  optional: true
+  languages:
+  - openapi
+  - sql
+  - docker
+  - github-actions
+  - protobuf
+  - graphql
+  - terraform
+  coverage_notes: Recognised by name and shape; other YAML/JSON is ignored.
+permissions:
+  network: false
+  secrets: []
+  commands:
+  - python3
+  filesystem_write:
+  - docs
+dependencies:
+- name: pydantic
+  version_spec: ==2.14.0
+  reason: model validation
+- name: pyyaml
+  version_spec: ==6.0.3
+  reason: reading YAML files
+targets:
+- claude-code
+- github-copilot
+- codex
+- antigravity
+assumptions: []
+workflow: []
+examples: []
+requirement: ''
