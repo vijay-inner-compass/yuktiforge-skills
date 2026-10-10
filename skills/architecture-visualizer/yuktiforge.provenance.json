@@ -8,7 +8,7 @@
   "skill_id": "architecture-visualizer",
   "skill_version": "0.3.0",
   "source": "src/yuktiforge/skills/architecture_visualizer",
-  "source_date_epoch": 1791612735,
-  "source_revision": "2ce10624d5dba675a7210178711075f6b0ebdd31",
+  "source_date_epoch": 1791616889,
+  "source_revision": "50a369a0a6f252ffe3d8dfbc00179e773fea76fc",
   "source_tree_dirty": false
 }

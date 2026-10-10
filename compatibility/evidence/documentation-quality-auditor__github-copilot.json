@@ -14,9 +14,9 @@
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "88d8c5381c0f883b1929b51a83a652dc84248ed7d89ac0f81e804606f7874201",
+  "package_content_sha256": "b1918ee9a2d09d10690114bd25a54af62effd540a22b6331a543eec6237563b6",
   "skill_id": "documentation-quality-auditor",
-  "skill_version": "0.1.0",
+  "skill_version": "0.1.1",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"

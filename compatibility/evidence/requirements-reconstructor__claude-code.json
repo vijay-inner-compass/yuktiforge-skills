@@ -1,6 +1,6 @@
 {
   "agent": "claude-code",
-  "agent_cost_usd": 0.039768200000000004,
+  "agent_cost_usd": 0.0400217,
   "agent_detected": {
     "agent": "claude-code",
     "found": true,
@@ -9,14 +9,14 @@
     "where": "/opt/homebrew/bin/claude"
   },
   "agent_run_seconds": 16.5,
-  "agent_transcript_sha256": "449b9d18dcc804bc8296b836b35c53cbea18d9cf5bfe0791611de169649a2f5f",
+  "agent_transcript_sha256": "f2362fc09471af924107842f7fa740e77205f5bb1122187b2c96d5742a3f3dc1",
   "format": "yuktiforge-compat-evidence/1",
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "9f611ba97f7725d89a4a8e5e4b0b92c65b1fbcec3fbba26b7d80476b1bfa7883",
+  "package_content_sha256": "e9a38daaa74816f834c2190e064f33cd0a91561837f911fd443b9fc715391430",
   "skill_id": "requirements-reconstructor",
-  "skill_version": "0.1.0",
+  "skill_version": "0.1.1",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"
@@ -30,8 +30,8 @@
     "agent_invocation": {
       "detail": "the agent ran the skill's script from the installed folder and its output is correct",
       "facts": {
-        "answer": "DRAFT (INCOMPLETE: missing-business-context, missing-business-intent, missing-st",
-        "command": "python3 .claude/skills/requirements-reconstructor/scripts/yuktiforge_docs.py doctor"
+        "answer": "DRAFT",
+        "command": "python3 .claude/skills/requirements-reconstructor/scripts/yuktiforge_docs.py reconstruct --repo shop --out docs/ws"
       },
       "status": "PASS"
     },

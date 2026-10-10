@@ -14,9 +14,9 @@
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "1b66bfd261a8d736f2b3399b6baa8a19b74560204b002091d7a82400d934b31a",
+  "package_content_sha256": "c049d16ef6d1cb340aa31da6f601b92c2a64c96c95003727159efc91a74c06f1",
   "skill_id": "architecture-documenter",
-  "skill_version": "0.1.0",
+  "skill_version": "0.1.1",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"

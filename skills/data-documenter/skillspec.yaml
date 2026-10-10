@@ -1,6 +1,6 @@
 schema_version: '1.0'
 skill_id: data-documenter
-version: 0.1.0
+version: 0.1.1
 description: 'Documents the data a system uses: a data dictionary and database document of tables, columns,
   keys and queries found in code, SQL and ORM models, plus an entity-relationship diagram when column
   definitions exist. Use when the user asks what data a system stores, for a data dictionary, or for an

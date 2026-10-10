@@ -1,6 +1,6 @@
 {
   "agent": "claude-code",
-  "agent_cost_usd": 0.0468643,
+  "agent_cost_usd": 0.0462136,
   "agent_detected": {
     "agent": "claude-code",
     "found": true,
@@ -8,15 +8,15 @@
     "version": "2.1.284 (Claude Code)",
     "where": "/opt/homebrew/bin/claude"
   },
-  "agent_run_seconds": 50.9,
-  "agent_transcript_sha256": "61367add4e1f594b54ed5a8447c6c00e14c272351157349258353a39349e970d",
+  "agent_run_seconds": 36.8,
+  "agent_transcript_sha256": "5f79432aabb8097ac33a02cd62fdaa619244810a753813a6b6f34852896f8ce5",
   "format": "yuktiforge-compat-evidence/1",
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "d980fd939bb6589f4c84f16b72f0df348b319dd7a747c1ba1a5d67a6af024e4d",
+  "package_content_sha256": "1e58f61e75e03710f5c5403ab114138f331851f5d7386725fb996cbd2bf289b8",
   "skill_id": "operations-documenter",
-  "skill_version": "0.1.0",
+  "skill_version": "0.1.1",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"
@@ -30,7 +30,7 @@
     "agent_invocation": {
       "detail": "the agent ran the skill's script from the installed folder and its output is correct",
       "facts": {
-        "answer": "```\nDB_PATH\n```",
+        "answer": "DB_PATH",
         "command": "python3 .claude/skills/operations-documenter/scripts/yuktiforge_docs.py doctor"
       },
       "status": "PASS"

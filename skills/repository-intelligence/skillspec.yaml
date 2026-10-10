@@ -1,6 +1,6 @@
 schema_version: '1.0'
 skill_id: repository-intelligence
-version: 0.1.0
+version: 0.1.1
 description: 'Scan a source repository of any language mix without running it: inventory, symbol and integration-boundary
   index, dependency index and an explicit coverage report, with file and line provenance for every fact.'
 inputs:

@@ -14,9 +14,9 @@
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "04dcd8746422c10542276fd652cfd76218766dc0dde0290af00230f5625e278a",
+  "package_content_sha256": "59f96a855f093e5f9acb60d3d60ec006679144258f00a55c0873ded4a2ae4114",
   "skill_id": "requirements-reconstructor",
-  "skill_version": "0.1.0",
+  "skill_version": "0.1.1",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"

@@ -1,6 +1,6 @@
 schema_version: '1.0'
 skill_id: architecture-documenter
-version: 0.1.0
+version: 0.1.1
 description: 'Documents a system''s architecture from its code: system, solution and technology architecture,
   a high-level design and a low-level design, with C4 context, container, component, integration and data-flow
   diagrams drawn from the same evidence and checked against it. Use when the user asks for architecture

@@ -1,6 +1,6 @@
 {
   "agent": "claude-code",
-  "agent_cost_usd": 0.032204399999999994,
+  "agent_cost_usd": 0.0348481,
   "agent_detected": {
     "agent": "claude-code",
     "found": true,
@@ -8,15 +8,15 @@
     "version": "2.1.284 (Claude Code)",
     "where": "/opt/homebrew/bin/claude"
   },
-  "agent_run_seconds": 15.8,
-  "agent_transcript_sha256": "91b1bbe9eba20fce3a82a517731f9a619e67b43c7677d8b38bb3caca14a3a3f2",
+  "agent_run_seconds": 17.8,
+  "agent_transcript_sha256": "ab04e418ef927dabd204e655d373c6091e22aec8963f73b0bd5033e4e2426b4b",
   "format": "yuktiforge-compat-evidence/1",
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "338d89723e6d309a220859c256ba44a5178d3aaf90db75ef622fe56362ac34c3",
+  "package_content_sha256": "22838fb401d2c7078e660214b664cb73d6dc4d43dd0777cd3c342fd1e0ba9726",
   "skill_id": "repository-intelligence",
-  "skill_version": "0.1.0",
+  "skill_version": "0.1.1",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"
@@ -31,7 +31,7 @@
       "detail": "the agent ran the skill's script from the installed folder and its output is correct",
       "facts": {
         "answer": "3",
-        "command": "python3 .claude/skills/repository-intelligence/scripts/yuktiforge_docs.py scan --repo shop --out docs/scan"
+        "command": "python3 .claude/skills/repository-intelligence/scripts/yuktiforge_docs.py query --scan docs/scan --boundary http-route"
       },
       "status": "PASS"
     },

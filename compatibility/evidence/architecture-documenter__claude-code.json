@@ -1,6 +1,6 @@
 {
   "agent": "claude-code",
-  "agent_cost_usd": 0.0428558,
+  "agent_cost_usd": 0.0414955,
   "agent_detected": {
     "agent": "claude-code",
     "found": true,
@@ -8,15 +8,15 @@
     "version": "2.1.284 (Claude Code)",
     "where": "/opt/homebrew/bin/claude"
   },
-  "agent_run_seconds": 38.1,
-  "agent_transcript_sha256": "d464d419a4c3c75f844b38d48a721575f78f1babe9cd286693302171733d3707",
+  "agent_run_seconds": 31.9,
+  "agent_transcript_sha256": "5c007597250108160a7e86445d7e2ea5cfd9b3fcc1ee72ef22a62dd2d8ff936e",
   "format": "yuktiforge-compat-evidence/1",
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "8efc44412237df740ed5d912519f9694448626578020bb2db437e4469aaf8e9c",
+  "package_content_sha256": "c2c491c5ac0b240c6bcb41bf2ed2207f7e11117cfdbcdc2acabddcd7c78fbdb1",
   "skill_id": "architecture-documenter",
-  "skill_version": "0.1.0",
+  "skill_version": "0.1.1",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"

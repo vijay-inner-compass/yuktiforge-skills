@@ -1,6 +1,6 @@
 schema_version: '1.0'
 skill_id: api-integration-documenter
-version: 0.1.0
+version: 0.1.1
 description: 'Documents a system''s interfaces: HTTP routes, outbound calls to external services, message
   topics, OpenAPI contracts reconciled with code, and data flows between them, with an integration diagram
   and data-flow diagrams. Use when the user asks for an API catalog, what a service calls or exposes,

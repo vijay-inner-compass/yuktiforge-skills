@@ -12,7 +12,7 @@ _TOKEN = re.compile(r'''
   (?P<lcom>//[^\n]*) |
   (?P<bcom>/\*.*?\*/) |
   (?P<pp>^[ \t]*\#[^\n]*) |
-  (?P<tstr>"""(?:.|\n)*?""") |
+  (?P<tstr>\$*"""(?s:.*?)""") |
   (?P<vstr>@"(?:[^"]|"")*") |
   (?P<istr>\$@?"(?:[^"\\\n]|\\.)*") |
   (?P<str>"(?:[^"\\\n]|\\.)*") |
@@ -79,7 +79,7 @@ def lex(text: str, lang: str) -> tuple[list[Tok], dict[int, int], bool]:
             continue
         if kind in ("str", "chr", "tpl", "tstr", "vstr", "istr"):
             if kind == "tstr":
-                content = val[3:-3]
+                content = val.lstrip("$")[3:-3]          # C# raw string, optionally interpolated ($"""...""")
             elif kind == "vstr":
                 content = val[2:-1].replace('""', '"')
             elif kind == "istr":
@@ -88,7 +88,7 @@ def lex(text: str, lang: str) -> tuple[list[Tok], dict[int, int], bool]:
                 content = val[1:-1]
             else:
                 content = val[1:-1]
-            t = Tok("str", content, start_line, line, pending_doc, interp=(kind == "istr") or (kind == "tpl" and "${" in content))
+            t = Tok("str", content, start_line, line, pending_doc, interp=(kind == "istr") or (kind == "tstr" and val.startswith("$")) or (kind == "tpl" and "${" in content))
         elif kind == "punct" and val == "/" and lang in ("typescript", "javascript") and (
                 prev_sig is None or (prev_sig.kind == "punct" and prev_sig.val not in (")", "]", "}")) or (prev_sig.kind == "id" and prev_sig.val in _REGEX_PREV_ID)):
             j, in_class, ok = pos, False, False

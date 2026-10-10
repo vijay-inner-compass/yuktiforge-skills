@@ -1,19 +1,19 @@
 {
   "manifest_version": "1.1",
   "skill_id": "documentation-intelligence",
-  "skill_version": "0.1.0",
-  "spec_sha256": "89f40c122c3ef62cd4e2676b8a7cae696dfd09d6c3bacab240ce348b7a7051cf",
+  "skill_version": "0.1.1",
+  "spec_sha256": "02e4d3cbc293d523274b8223e4911850ca50a0054096c5379f610ecaa37efb14",
   "targets": [
     "claude-code",
     "github-copilot",
     "codex",
     "antigravity"
   ],
-  "created_at": "2026-10-10T06:12:15Z",
+  "created_at": "2026-10-10T07:21:29Z",
   "files": [
     {
       "path": "INSTALL.md",
-      "sha256": "516f3c4147456eb03ee325030e4d9be3f52b8cc1830867cf3b378043d706086a",
+      "sha256": "ada953f9ed329d91a9a1e66587afc68a1621447ad854b981251dec2958ad5445",
       "size": 2005
     },
     {
@@ -113,8 +113,8 @@
     },
     {
       "path": "lib/yuktiforge/docint/analyzers/lexer.py",
-      "sha256": "4c8fca648de9106acced98de61057648751e29513ecad61273a3c6ac46639145",
-      "size": 5333
+      "sha256": "68ef3d5a47a5d24ed6f979ad125f6f2d0e66871fb9ab243560c9bf486a8f48ba",
+      "size": 5453
     },
     {
       "path": "lib/yuktiforge/docint/analyzers/lexfacts.py",
@@ -623,7 +623,7 @@
     },
     {
       "path": "skillspec.yaml",
-      "sha256": "89f40c122c3ef62cd4e2676b8a7cae696dfd09d6c3bacab240ce348b7a7051cf",
+      "sha256": "02e4d3cbc293d523274b8223e4911850ca50a0054096c5379f610ecaa37efb14",
       "size": 1275
     },
     {
@@ -633,7 +633,7 @@
     },
     {
       "path": "yuktiforge.provenance.json",
-      "sha256": "1b86549308fb89176f55a19364bfd19963f48358f9a40f60fe83a683abb1993a",
+      "sha256": "f711844d6a7859ccd928fe9f18a1f0f71c54d206f1040f600dd03c180ac664cc",
       "size": 603
     }
   ],

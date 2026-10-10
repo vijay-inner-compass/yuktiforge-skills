@@ -9,7 +9,7 @@
     "codex",
     "antigravity"
   ],
-  "created_at": "2026-10-10T06:12:15Z",
+  "created_at": "2026-10-10T07:21:29Z",
   "files": [
     {
       "path": "INSTALL.md",
@@ -208,7 +208,7 @@
     },
     {
       "path": "yuktiforge.provenance.json",
-      "sha256": "0c6bf4d80e08a9438be7fd2e6304ecab8975532e9bf824b4552d092d5ac303ed",
+      "sha256": "86ed270fa765668154bb7a7f715babd48d3c9bdffe4ce4c485296d0f99b94f22",
       "size": 600
     }
   ],

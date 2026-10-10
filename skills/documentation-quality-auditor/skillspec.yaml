@@ -1,6 +1,6 @@
 schema_version: '1.0'
 skill_id: documentation-quality-auditor
-version: 0.1.0
+version: 0.1.1
 description: 'Measures generated documentation against the evidence: eight pass/fail/not-tested gates
   (evidence, consistency with the model, invented identifiers, fabricated requirements, privacy, approval
   honesty, freshness, completeness), a coverage report, and a git-based change report that says which

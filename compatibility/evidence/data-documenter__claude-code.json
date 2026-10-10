@@ -1,6 +1,6 @@
 {
   "agent": "claude-code",
-  "agent_cost_usd": 0.0462553,
+  "agent_cost_usd": 0.045817300000000005,
   "agent_detected": {
     "agent": "claude-code",
     "found": true,
@@ -8,15 +8,15 @@
     "version": "2.1.284 (Claude Code)",
     "where": "/opt/homebrew/bin/claude"
   },
-  "agent_run_seconds": 129.0,
-  "agent_transcript_sha256": "16013de07e70a617ec2d17331597b1a959a1ef081a61b110b38df00237cf1661",
+  "agent_run_seconds": 32.2,
+  "agent_transcript_sha256": "7550bb27e83dbf887ab43750c1f9280b10818af09aef67f77239a74cd7ac8d7e",
   "format": "yuktiforge-compat-evidence/1",
   "notes": [
     "bootstrap.py created the private environment from requirements.lock"
   ],
-  "package_content_sha256": "fa4fb9c9051f03a467598d41914470c884b698ddd3525bc5e462d0edb9261c93",
+  "package_content_sha256": "2fdba4ab413510bef6f22f365decf2394e3cb90f11b61a10ca94e117c216841d",
   "skill_id": "data-documenter",
-  "skill_version": "0.1.0",
+  "skill_version": "0.1.1",
   "tested_on": {
     "platform": "Darwin arm64",
     "python": "3.12.14"

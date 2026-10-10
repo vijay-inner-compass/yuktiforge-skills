@@ -1,9 +1,9 @@
-# Release report: yuktiforge-skills 0.5.0
+# Release report: yuktiforge-skills 0.5.1
 
 **READY**
 
 * tool: yuktiforge 0.5.0
-* source revision: `2ce10624d5dba675a7210178711075f6b0ebdd31` (clean)
+* source revision: `50a369a0a6f252ffe3d8dfbc00179e773fea76fc` (clean)
 * license: Apache-2.0
 
 ## Skill gates
@@ -22,7 +22,7 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
 ### api-contract-reviewer 0.1.0: configured `preview`, listed as `preview`
 
@@ -38,9 +38,9 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
-### repository-intelligence 0.1.0: configured `preview`, listed as `preview`
+### repository-intelligence 0.1.1: configured `preview`, listed as `preview`
 
 | Gate | Result | Detail |
 |---|---|---|
@@ -54,9 +54,9 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
-### documentation-intelligence 0.1.0: configured `preview`, listed as `preview`
+### documentation-intelligence 0.1.1: configured `preview`, listed as `preview`
 
 | Gate | Result | Detail |
 |---|---|---|
@@ -70,9 +70,9 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
-### code-explainer 0.1.0: configured `preview`, listed as `preview`
+### code-explainer 0.1.1: configured `preview`, listed as `preview`
 
 | Gate | Result | Detail |
 |---|---|---|
@@ -86,9 +86,9 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
-### behavior-reconstructor 0.1.0: configured `preview`, listed as `preview`
+### behavior-reconstructor 0.1.1: configured `preview`, listed as `preview`
 
 | Gate | Result | Detail |
 |---|---|---|
@@ -102,9 +102,9 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
-### requirements-reconstructor 0.1.0: configured `preview`, listed as `preview`
+### requirements-reconstructor 0.1.1: configured `preview`, listed as `preview`
 
 | Gate | Result | Detail |
 |---|---|---|
@@ -118,9 +118,9 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
-### architecture-documenter 0.1.0: configured `preview`, listed as `preview`
+### architecture-documenter 0.1.1: configured `preview`, listed as `preview`
 
 | Gate | Result | Detail |
 |---|---|---|
@@ -134,9 +134,9 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
-### data-documenter 0.1.0: configured `preview`, listed as `preview`
+### data-documenter 0.1.1: configured `preview`, listed as `preview`
 
 | Gate | Result | Detail |
 |---|---|---|
@@ -150,9 +150,9 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
-### api-integration-documenter 0.1.0: configured `preview`, listed as `preview`
+### api-integration-documenter 0.1.1: configured `preview`, listed as `preview`
 
 | Gate | Result | Detail |
 |---|---|---|
@@ -166,9 +166,9 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
-### operations-documenter 0.1.0: configured `preview`, listed as `preview`
+### operations-documenter 0.1.1: configured `preview`, listed as `preview`
 
 | Gate | Result | Detail |
 |---|---|---|
@@ -182,9 +182,9 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
-### documentation-quality-auditor 0.1.0: configured `preview`, listed as `preview`
+### documentation-quality-auditor 0.1.1: configured `preview`, listed as `preview`
 
 | Gate | Result | Detail |
 |---|---|---|
@@ -198,9 +198,9 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
-### documentation-publisher 0.1.0: configured `preview`, listed as `preview`
+### documentation-publisher 0.1.1: configured `preview`, listed as `preview`
 
 | Gate | Result | Detail |
 |---|---|---|
@@ -214,7 +214,7 @@
 | SK-08 its documentation links resolve | PASS | unresolved: [] |
 | SK-09 its manifest matches its files | PASS | ok |
 | SK-10 ships tests | PASS | ok |
-| SK-11 was built from a clean, identified source revision | PASS | 2ce10624d5db |
+| SK-11 was built from a clean, identified source revision | PASS | 50a369a0a6f2 |
 
 ## Repository gates
 

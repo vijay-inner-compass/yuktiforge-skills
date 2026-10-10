@@ -1,6 +1,6 @@
 schema_version: '1.0'
 skill_id: requirements-reconstructor
-version: 0.1.0
+version: 0.1.1
 description: 'Drafts a business requirements document and a software requirements specification from existing
   code, as clearly marked reconstructions: candidate requirements with evidence, explicit gaps where business
   intent is unknowable from code, and a traceability record that links requirements to code only when

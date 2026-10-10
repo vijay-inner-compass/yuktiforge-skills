@@ -1,14 +1,14 @@
 {
   "builder": "docint-standalone",
   "built_by": "yuktiforge 0.5.0",
-  "content_sha256": "5e188050f0d13a093543e9b17872659ee012bd8bdc04c0273a8b48d425b75086",
+  "content_sha256": "fc31dd4ba52014f41b02eb9d137f6901a53d04803f2298e8da8d2b566cf5f2ce",
   "file_count": 124,
   "format": "yuktiforge-provenance/1",
   "reproducible_build": "same source revision + same tool version + same SOURCE_DATE_EPOCH give byte-identical zips",
   "skill_id": "api-integration-documenter",
-  "skill_version": "0.1.0",
+  "skill_version": "0.1.1",
   "source": "src/yuktiforge/skills/api_integration_documenter",
-  "source_date_epoch": 1791612735,
-  "source_revision": "2ce10624d5dba675a7210178711075f6b0ebdd31",
+  "source_date_epoch": 1791616889,
+  "source_revision": "50a369a0a6f252ffe3d8dfbc00179e773fea76fc",
   "source_tree_dirty": false
 }
